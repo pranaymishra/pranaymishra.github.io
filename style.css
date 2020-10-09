@@ -2,6 +2,31 @@
 	color: #fff !important;
 }
 
+select#exit_isd {
+    color: #999;
+    padding-bottom: 6px;
+}
+
+.fs-20 {
+	font-size: 20px !important;
+}
+
+.fs-18 {
+	font-size: 18px !important;
+}
+
+.top--1 {
+	top: -1px !important;
+}
+
+.card.course-card .card-title {
+    font-size: 14px;
+}
+
+.card-body {
+    padding: 0.75rem;
+}
+
 .banner-cd {
 	color: #fff !important;
 }
@@ -13,11 +38,20 @@
     border-radius: 10px;
 }
 
+.select-wrapper {
+    overflow: hidden;
+    border: 1px solid #ced4da;
+}
+
+.form-control-pill {
+    border-radius: 23px !important;
+}
 
 .toggle {
 	margin-bottom: 25px;
-	padding-bottom: 25px;
+	padding-bottom: 20px;
 	border-bottom: 1px solid #EEE;
+
 }
 
 .toggle .togglet i.toggle-open {
@@ -520,7 +554,7 @@ span.middot {
 	position: relative;
 	margin: 60px 0;
 	padding: 60px 0;
-	background-color: #F9F9F9;
+	background-color: rgba(38, 125, 244, 0.05);
 	overflow: hidden;
 }
 
@@ -3496,7 +3530,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	background-color: #FFF;
 }
 
-#content p { line-height: 1.8; }
+#content p { line-height: 1.5; }
 
 .content-wrap {
 	position: relative;
@@ -7686,7 +7720,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .feature-box.fbox-center p {
 	font-size: 14px;
-	margin-top: 15px;
+	margin: 15px 0 6px;
 }
 
 
@@ -8994,7 +9028,7 @@ body:not(.device-touch) .social-icon i {
 
 .acctitle i {
 	position: absolute;
-	top: 0;
+	top: -1px;
 	left: 0;
 	width: 14px;
 	text-align: center;
@@ -9018,7 +9052,7 @@ body:not(.device-touch) .social-icon i {
 
 .accordion.accordion-bg .acctitle,
 .accordion.accordion-bg .acctitlec {
-	background-color: #EEE;
+	background-color: rgba(38, 125, 244, 0.1);
 	line-height: 44px;
 	padding: 0 0 0 36px;
 	margin-bottom: 5px;
@@ -9037,13 +9071,13 @@ body:not(.device-touch) .social-icon i {
 -----------------------------------------------------------------*/
 
 .accordion.accordion-border {
-	border: 1px solid #DDD;
+	border: 1px solid rgba(38, 125, 244, 0.1);
 	border-radius: 4px;
 }
 
 .accordion.accordion-border .acctitle,
 .accordion.accordion-border .acctitlec {
-	border-color: #CCC;
+	border-color: rgba(38, 125, 244, 0.1);
 	line-height: 44px;
 	padding: 0 15px 0 36px;
 }
@@ -9053,7 +9087,7 @@ body:not(.device-touch) .social-icon i {
 	line-height: 44px;
 }
 
-.accordion.accordion-border .acc_content { padding: 0 15px 15px 36px; }
+.accordion.accordion-border .acc_content { padding: 10px 15px 15px 36px; }
 
 
 /* Accordion - Large
@@ -11316,12 +11350,22 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 
 .heading-block ~ p:not(.lead) { font-size: 15px; }
 
+.upcoming:after{
+	content: '';
+	display: block;
+	margin-top: 15px;
+	width: 40px;
+	border-top: 2px solid #007bff;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .heading-block:after {
 	content: '';
 	display: block;
-	margin-top: 30px;
+	margin-top: 20px;
 	width: 40px;
-	border-top: 2px solid #444;
+	border-top: 3px solid #007bff;
 }
 
 .center .heading-block:after,
@@ -11341,7 +11385,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 /* Emphasis Title
 -----------------------------------------------------------------*/
 
-.emphasis-title { margin: 0 0 50px; }
+.emphasis-title { margin: 0 0 30px; }
 
 .emphasis-title h1,
 .emphasis-title h2 {

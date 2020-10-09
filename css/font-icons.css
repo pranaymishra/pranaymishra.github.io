@@ -100,7 +100,7 @@
 
 .iconlist.iconlist-large { font-size: 16px; }
 
-.iconlist.iconlist-large li { margin: 4px 0; }
+.iconlist.iconlist-large li { margin: 10px 0; }
 
 .iconlist.iconlist-large > li [class^="icon-"], .iconlist.iconlist-large > li [class*=" icon-"] {
 	width: 16px;
