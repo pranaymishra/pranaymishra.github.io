@@ -347,7 +347,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 
 .dark #page-title span { color: rgba(255,255,255,0.7); }
 
-.dark .breadcrumb a { color: #eee; }
+.dark .breadcrumb a { color: #8ed1dc; }
 
 .dark .breadcrumb a:hover { color: #fff; }
 
@@ -963,7 +963,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 .dark .emphasis-title.not-dark h1,
 .dark .emphasis-title.not-dark h2 { color: #333; }
 
-.dark .heading-block:not(.not-dark) > span { color: #EEE; }
+.dark .heading-block:not(.not-dark) > span { color: #ffffff; }
 
 .dark .emphasis-title.not-dark { color: #444; }
 
