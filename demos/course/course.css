@@ -2,6 +2,12 @@
 	--themecolor: #0f7c90;
 }
 
+.heading-block h2 {
+	text-transform: none;
+	font-size: 18px;
+	font-weight: 400;
+}
+
 .ls-1 { letter-spacing: -1px !important; }
 
 .play-video {
@@ -249,6 +255,12 @@
 	.heading-block h3 {
 		font-size: 42px;
 		letter-spacing: -1px;
+	}
+
+	.heading-block h1 {
+		font-size: 42px;
+		letter-spacing: -1px;
+		text-transform: none;
 	}
 
 	.course-card .card-title {
