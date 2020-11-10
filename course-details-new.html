@@ -37,6 +37,43 @@
 </head>
 
 <body class="stretched">
+	<div class="body-overlay"></div>
+
+	<div id="side-panel" class="bg-white">
+
+		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a></div>
+
+		<div class="side-panel-wrap">
+
+			<div class="widget quick-contact-widget form-widget clearfix">
+				<div class="heading-block mb-3 nobottomborder">
+					
+					<h3 style="font-size: 20px;">Apply Now</h3>
+					<span>
+						Learn Angular 10!
+					</span>
+				</div>
+				
+				<div class="form-result"></div>
+				<form id="quick-contact-form" name="quick-contact-form" action="include/form.php" method="post" class="quick-contact-form nobottommargin">
+					<div class="form-process"></div>
+					<input type="text" class="required sm-form-control input-block-level" id="quick-contact-form-name" name="quick-contact-form-name" value="" placeholder="Full Name" />
+					<input type="text" class="required sm-form-control email input-block-level" id="quick-contact-form-email" name="quick-contact-form-email" value="" placeholder="Email Address" />
+					<select name="phone_code" id="exit_isd" class="sm-form-control valid" aria-invalid="false">
+						<option value="+1" title="+1 - United States">+1 - United States</option><option value="+91" title="+91 - India">+91 - India</option><option value="+1" title="+1 - Canada">+1 - Canada</option><option value="+61" title="+61 - Australia">+61 - Australia</option><option value="+65" title="+65 - Singapore">+65 - Singapore</option><option value="+64" title="+64 - New Zealand">+64 - New Zealand</option><option value="+49" title="+49 - Germany">+49 - Germany</option><option value="+971" title="+971 - United Arab Emirates">+971 - United Arab Emirates</option><option value="+852" title="+852 - Hong Kong">+852 - Hong Kong</option><option value="+506" title="+506 - Costa Rica">+506 - Costa Rica</option><option value="+353" title="+353 - Ireland">+353 - Ireland</option><option value="+358" title="+358 - Aland Islands">+358 - Aland Islands</option><option value="+355" title="+355 - Albania">+355 - Albania</option><option value="+213" title="+213 - Algeria">+213 - Algeria</option><option value="+376" title="+376 - Andorra">+376 - Andorra</option><option value="+54" title="+54 - Argentina">+54 - Argentina</option><option value="+374" title="+374 - Armenia">+374 - Armenia</option><option value="+61" title="+61 - Australia">+61 - Australia</option><option value="+43" title="+43 - Austria">+43 - Austria</option><option value="+994" title="+994 - Azerbaijan">+994 - Azerbaijan</option><option value="+973" title="+973 - Bahrain">+973 - Bahrain</option><option value="+880" title="+880 - Bangladesh">+880 - Bangladesh</option><option value="+375" title="+375 - Belarus">+375 - Belarus</option><option value="+32" title="+32 - Belgium">+32 - Belgium</option><option value="+591" title="+591 - Bolivia">+591 - Bolivia</option><option value="+387" title="+387 - Bosnia and Herzegovina">+387 - Bosnia and Herzegovina</option><option value="+267" title="+267 - Botswana">+267 - Botswana</option><option value="+55" title="+55 - Brazil">+55 - Brazil</option><option value="+359" title="+359 - Bulgaria">+359 - Bulgaria</option><option value="+855" title="+855 - Cambodia">+855 - Cambodia</option><option value="+1" title="+1 - Canada">+1 - Canada</option><option value="+34" title="+34 - Canary Islands">+34 - Canary Islands</option><option value="+56" title="+56 - Chile">+56 - Chile</option><option value="+86" title="+86 - China">+86 - China</option><option value="+57" title="+57 - Colombia">+57 - Colombia</option><option value="+385" title="+385 - Croatia">+385 - Croatia</option><option value="+357" title="+357 - Cyprus">+357 - Cyprus</option><option value="+420" title="+420 - Czech Republic">+420 - Czech Republic</option><option value="+45" title="+45 - Denmark">+45 - Denmark</option><option value="+20" title="+20 - Egypt">+20 - Egypt</option><option value="+372" title="+372 - Estonia">+372 - Estonia</option><option value="+251" title="+251 - Ethiopia">+251 - Ethiopia</option><option value="+298" title="+298 - Faroe Islands">+298 - Faroe Islands</option><option value="+679" title="+679 - Fiji">+679 - Fiji</option><option value="+358" title="+358 - Finland">+358 - Finland</option><option value="+33" title="+33 - France">+33 - France</option><option value="+995" title="+995 - Georgia">+995 - Georgia</option><option value="+49" title="+49 - Germany">+49 - Germany</option><option value="+233" title="+233 - Ghana">+233 - Ghana</option><option value="+350" title="+350 - Gibraltar">+350 - Gibraltar</option><option value="+30" title="+30 - Greece">+30 - Greece</option><option value="+44" title="+44 - Guernsey">+44 - Guernsey</option><option value="+852" title="+852 - Hong Kong">+852 - Hong Kong</option><option value="+36" title="+36 - Hungary">+36 - Hungary</option><option value="+354" title="+354 - Iceland">+354 - Iceland</option><option value="+91" title="+91 - India">+91 - India</option><option value="+62" title="+62 - Indonesia">+62 - Indonesia</option><option value="+98" title="+98 - Iran">+98 - Iran</option><option value="+964" title="+964 - Iraq">+964 - Iraq</option><option value="+353" title="+353 - Ireland">+353 - Ireland</option><option value="+44" title="+44 - Isle of Man">+44 - Isle of Man</option><option value="+972" title="+972 - Israel">+972 - Israel</option><option value="+39" title="+39 - Italy">+39 - Italy</option><option value="+81" title="+81 - Japan">+81 - Japan</option><option value="+44" title="+44 - Jersey">+44 - Jersey</option><option value="+962" title="+962 - Jordan">+962 - Jordan</option><option value="+254" title="+254 - Kenya">+254 - Kenya</option><option value="+381" title="+381 - Kosovo">+381 - Kosovo</option><option value="+965" title="+965 - Kuwait">+965 - Kuwait</option><option value="+371" title="+371 - Latvia">+371 - Latvia</option><option value="+961" title="+961 - Lebanon">+961 - Lebanon</option><option value="+231" title="+231 - Liberia">+231 - Liberia</option><option value="+218" title="+218 - Libya">+218 - Libya</option><option value="+423" title="+423 - Liechtenstein">+423 - Liechtenstein</option><option value="+370" title="+370 - Lithuania">+370 - Lithuania</option><option value="+352" title="+352 - Luxembourg">+352 - Luxembourg</option><option value="+389" title="+389 - Macedonia">+389 - Macedonia</option><option value="+60" title="+60 - Malaysia">+60 - Malaysia</option><option value="+356" title="+356 - Malta">+356 - Malta</option><option value="+52" title="+52 - Mexico">+52 - Mexico</option><option value="+373" title="+373 - Moldova">+373 - Moldova</option><option value="+377" title="+377 - Monaco">+377 - Monaco</option><option value="+976" title="+976 - Mongolia">+976 - Mongolia</option><option value="+382" title="+382 - Montenegro">+382 - Montenegro</option><option value="+212" title="+212 - Morocco">+212 - Morocco</option><option value="+95" title="+95 - Myanmar">+95 - Myanmar</option><option value="+31" title="+31 - Netherlands">+31 - Netherlands</option><option value="+64" title="+64 - New Zealand">+64 - New Zealand</option><option value="+234" title="+234 - Nigeria">+234 - Nigeria</option><option value="+44" title="+44 - Northern Ireland">+44 - Northern Ireland</option><option value="+47" title="+47 - Norway">+47 - Norway</option><option value="+968" title="+968 - Oman">+968 - Oman</option><option value="+507" title="+507 - Panama">+507 - Panama</option><option value="+675" title="+675 - Papua New Guinea">+675 - Papua New Guinea</option><option value="+51" title="+51 - Peru">+51 - Peru</option><option value="+63" title="+63 - Philippines">+63 - Philippines</option><option value="+48" title="+48 - Poland">+48 - Poland</option><option value="+351" title="+351 - Portugal">+351 - Portugal</option><option value="+974" title="+974 - Qatar">+974 - Qatar</option><option value="+40" title="+40 - Romania">+40 - Romania</option><option value="+7" title="+7 - Russian Federation">+7 - Russian Federation</option><option value="+378" title="+378 - San Marino">+378 - San Marino</option><option value="+966" title="+966 - Saudi Arabia">+966 - Saudi Arabia</option><option value="+44" title="+44 - Scotland">+44 - Scotland</option><option value="+381" title="+381 - Serbia">+381 - Serbia</option><option value="+65" title="+65 - Singapore">+65 - Singapore</option><option value="+421" title="+421 - Slovakia">+421 - Slovakia</option><option value="+386" title="+386 - Slovenia">+386 - Slovenia</option><option value="+27" title="+27 - South Africa">+27 - South Africa</option><option value="+82" title="+82 - South Korea">+82 - South Korea</option><option value="+34" title="+34 - Spain">+34 - Spain</option><option value="+94" title="+94 - Srilanka">+94 - Srilanka</option><option value="+249" title="+249 - Sudan">+249 - Sudan</option><option value="+47" title="+47 - Svalbard and Jan Mayen">+47 - Svalbard and Jan Mayen</option><option value="+46" title="+46 - Sweden">+46 - Sweden</option><option value="+41" title="+41 - Switzerland">+41 - Switzerland</option><option value="+886" title="+886 - Taiwan, ROC">+886 - Taiwan, ROC</option><option value="+255" title="+255 - Tanzania">+255 - Tanzania</option><option value="+66" title="+66 - Thailand">+66 - Thailand</option><option value="+216" title="+216 - Tunisia">+216 - Tunisia</option><option value="+90" title="+90 - Turkey">+90 - Turkey</option><option value="+380" title="+380 - Ukraine">+380 - Ukraine</option><option value="+971" title="+971 - United Arab Emirates">+971 - United Arab Emirates</option><option value="+44" title="+44 - United Kingdom">+44 - United Kingdom</option><option value="+598" title="+598 - Uruguay">+598 - Uruguay</option><option value="+58" title="+58 - Venezuela">+58 - Venezuela</option><option value="+84" title="+84 - Vietnam">+84 - Vietnam</option><option value="+44" title="+44 - Wales">+44 - Wales</option>
+					</select>
+					<input type="number" class="required sm-form-control number input-block-level" id="quick-contact-form-number" name="quick-contact-form-number" value="" placeholder="Contact Number" />
+						
+					<input type="text" class="hidden" id="quick-contact-form-botcheck" name="quick-contact-form-botcheck" value="" />
+					<input type="hidden" name="prefix" value="quick-contact-form-">
+					<button type="submit" id="quick-contact-form-submit" name="quick-contact-form-submit" class="button button-small button-3d button-red nomargin" value="submit">Apply Now</button>
+				</form>
+
+			</div>
+
+		</div>
+
+	</div>
 
 	<!-- Document Wrapper
 	============================================= -->
@@ -422,48 +459,6 @@
 
 		</header><!-- #header end -->
 
-
-		<!-- Modal -->
-		<div class="modal1 mfp-hide" id="modal-register">
-			<div class="card divcenter" style="max-width: 540px;">
-				<div class="card-header pt-4 pt-3 noborder nobg center">
-					<h3 class="mb-0 t400">Hello, Learn Angular 10 in just 1 hour a day!
-
-					</h3>
-				</div>
-				<div class="card-body divcenter pb-5" style="max-width: 80%;">
-				
-				<div class="divider divider-center mt-0 mb-4"><i class="icon-email2"></i></div>
-					<form id="login-form" name="login-form" class="nobottommargin row" action="#" method="post">
-
-						<div class="col-12">
-							<input type="text" id="login-form-username" name="login-form-username" value="" class="form-control not-dark" placeholder="Name" />
-						</div>
-
-						<div class="col-12 mt-3">
-							<input type="email" id="login-form-password" name="login-form-password" value="" class="form-control not-dark" placeholder="Email Address" />
-						</div>
-
-						<div class="col-3 mt-3">
-							<select name="phone_code" id="exit_isd" class="form-control valid" aria-invalid="false">
-								<option value="+1" title="+1 - United States">+1 - United States</option><option value="+91" title="+91 - India">+91 - India</option><option value="+1" title="+1 - Canada">+1 - Canada</option><option value="+61" title="+61 - Australia">+61 - Australia</option><option value="+65" title="+65 - Singapore">+65 - Singapore</option><option value="+64" title="+64 - New Zealand">+64 - New Zealand</option><option value="+49" title="+49 - Germany">+49 - Germany</option><option value="+971" title="+971 - United Arab Emirates">+971 - United Arab Emirates</option><option value="+852" title="+852 - Hong Kong">+852 - Hong Kong</option><option value="+506" title="+506 - Costa Rica">+506 - Costa Rica</option><option value="+353" title="+353 - Ireland">+353 - Ireland</option><option value="+358" title="+358 - Aland Islands">+358 - Aland Islands</option><option value="+355" title="+355 - Albania">+355 - Albania</option><option value="+213" title="+213 - Algeria">+213 - Algeria</option><option value="+376" title="+376 - Andorra">+376 - Andorra</option><option value="+54" title="+54 - Argentina">+54 - Argentina</option><option value="+374" title="+374 - Armenia">+374 - Armenia</option><option value="+61" title="+61 - Australia">+61 - Australia</option><option value="+43" title="+43 - Austria">+43 - Austria</option><option value="+994" title="+994 - Azerbaijan">+994 - Azerbaijan</option><option value="+973" title="+973 - Bahrain">+973 - Bahrain</option><option value="+880" title="+880 - Bangladesh">+880 - Bangladesh</option><option value="+375" title="+375 - Belarus">+375 - Belarus</option><option value="+32" title="+32 - Belgium">+32 - Belgium</option><option value="+591" title="+591 - Bolivia">+591 - Bolivia</option><option value="+387" title="+387 - Bosnia and Herzegovina">+387 - Bosnia and Herzegovina</option><option value="+267" title="+267 - Botswana">+267 - Botswana</option><option value="+55" title="+55 - Brazil">+55 - Brazil</option><option value="+359" title="+359 - Bulgaria">+359 - Bulgaria</option><option value="+855" title="+855 - Cambodia">+855 - Cambodia</option><option value="+1" title="+1 - Canada">+1 - Canada</option><option value="+34" title="+34 - Canary Islands">+34 - Canary Islands</option><option value="+56" title="+56 - Chile">+56 - Chile</option><option value="+86" title="+86 - China">+86 - China</option><option value="+57" title="+57 - Colombia">+57 - Colombia</option><option value="+385" title="+385 - Croatia">+385 - Croatia</option><option value="+357" title="+357 - Cyprus">+357 - Cyprus</option><option value="+420" title="+420 - Czech Republic">+420 - Czech Republic</option><option value="+45" title="+45 - Denmark">+45 - Denmark</option><option value="+20" title="+20 - Egypt">+20 - Egypt</option><option value="+372" title="+372 - Estonia">+372 - Estonia</option><option value="+251" title="+251 - Ethiopia">+251 - Ethiopia</option><option value="+298" title="+298 - Faroe Islands">+298 - Faroe Islands</option><option value="+679" title="+679 - Fiji">+679 - Fiji</option><option value="+358" title="+358 - Finland">+358 - Finland</option><option value="+33" title="+33 - France">+33 - France</option><option value="+995" title="+995 - Georgia">+995 - Georgia</option><option value="+49" title="+49 - Germany">+49 - Germany</option><option value="+233" title="+233 - Ghana">+233 - Ghana</option><option value="+350" title="+350 - Gibraltar">+350 - Gibraltar</option><option value="+30" title="+30 - Greece">+30 - Greece</option><option value="+44" title="+44 - Guernsey">+44 - Guernsey</option><option value="+852" title="+852 - Hong Kong">+852 - Hong Kong</option><option value="+36" title="+36 - Hungary">+36 - Hungary</option><option value="+354" title="+354 - Iceland">+354 - Iceland</option><option value="+91" title="+91 - India">+91 - India</option><option value="+62" title="+62 - Indonesia">+62 - Indonesia</option><option value="+98" title="+98 - Iran">+98 - Iran</option><option value="+964" title="+964 - Iraq">+964 - Iraq</option><option value="+353" title="+353 - Ireland">+353 - Ireland</option><option value="+44" title="+44 - Isle of Man">+44 - Isle of Man</option><option value="+972" title="+972 - Israel">+972 - Israel</option><option value="+39" title="+39 - Italy">+39 - Italy</option><option value="+81" title="+81 - Japan">+81 - Japan</option><option value="+44" title="+44 - Jersey">+44 - Jersey</option><option value="+962" title="+962 - Jordan">+962 - Jordan</option><option value="+254" title="+254 - Kenya">+254 - Kenya</option><option value="+381" title="+381 - Kosovo">+381 - Kosovo</option><option value="+965" title="+965 - Kuwait">+965 - Kuwait</option><option value="+371" title="+371 - Latvia">+371 - Latvia</option><option value="+961" title="+961 - Lebanon">+961 - Lebanon</option><option value="+231" title="+231 - Liberia">+231 - Liberia</option><option value="+218" title="+218 - Libya">+218 - Libya</option><option value="+423" title="+423 - Liechtenstein">+423 - Liechtenstein</option><option value="+370" title="+370 - Lithuania">+370 - Lithuania</option><option value="+352" title="+352 - Luxembourg">+352 - Luxembourg</option><option value="+389" title="+389 - Macedonia">+389 - Macedonia</option><option value="+60" title="+60 - Malaysia">+60 - Malaysia</option><option value="+356" title="+356 - Malta">+356 - Malta</option><option value="+52" title="+52 - Mexico">+52 - Mexico</option><option value="+373" title="+373 - Moldova">+373 - Moldova</option><option value="+377" title="+377 - Monaco">+377 - Monaco</option><option value="+976" title="+976 - Mongolia">+976 - Mongolia</option><option value="+382" title="+382 - Montenegro">+382 - Montenegro</option><option value="+212" title="+212 - Morocco">+212 - Morocco</option><option value="+95" title="+95 - Myanmar">+95 - Myanmar</option><option value="+31" title="+31 - Netherlands">+31 - Netherlands</option><option value="+64" title="+64 - New Zealand">+64 - New Zealand</option><option value="+234" title="+234 - Nigeria">+234 - Nigeria</option><option value="+44" title="+44 - Northern Ireland">+44 - Northern Ireland</option><option value="+47" title="+47 - Norway">+47 - Norway</option><option value="+968" title="+968 - Oman">+968 - Oman</option><option value="+507" title="+507 - Panama">+507 - Panama</option><option value="+675" title="+675 - Papua New Guinea">+675 - Papua New Guinea</option><option value="+51" title="+51 - Peru">+51 - Peru</option><option value="+63" title="+63 - Philippines">+63 - Philippines</option><option value="+48" title="+48 - Poland">+48 - Poland</option><option value="+351" title="+351 - Portugal">+351 - Portugal</option><option value="+974" title="+974 - Qatar">+974 - Qatar</option><option value="+40" title="+40 - Romania">+40 - Romania</option><option value="+7" title="+7 - Russian Federation">+7 - Russian Federation</option><option value="+378" title="+378 - San Marino">+378 - San Marino</option><option value="+966" title="+966 - Saudi Arabia">+966 - Saudi Arabia</option><option value="+44" title="+44 - Scotland">+44 - Scotland</option><option value="+381" title="+381 - Serbia">+381 - Serbia</option><option value="+65" title="+65 - Singapore">+65 - Singapore</option><option value="+421" title="+421 - Slovakia">+421 - Slovakia</option><option value="+386" title="+386 - Slovenia">+386 - Slovenia</option><option value="+27" title="+27 - South Africa">+27 - South Africa</option><option value="+82" title="+82 - South Korea">+82 - South Korea</option><option value="+34" title="+34 - Spain">+34 - Spain</option><option value="+94" title="+94 - Srilanka">+94 - Srilanka</option><option value="+249" title="+249 - Sudan">+249 - Sudan</option><option value="+47" title="+47 - Svalbard and Jan Mayen">+47 - Svalbard and Jan Mayen</option><option value="+46" title="+46 - Sweden">+46 - Sweden</option><option value="+41" title="+41 - Switzerland">+41 - Switzerland</option><option value="+886" title="+886 - Taiwan, ROC">+886 - Taiwan, ROC</option><option value="+255" title="+255 - Tanzania">+255 - Tanzania</option><option value="+66" title="+66 - Thailand">+66 - Thailand</option><option value="+216" title="+216 - Tunisia">+216 - Tunisia</option><option value="+90" title="+90 - Turkey">+90 - Turkey</option><option value="+380" title="+380 - Ukraine">+380 - Ukraine</option><option value="+971" title="+971 - United Arab Emirates">+971 - United Arab Emirates</option><option value="+44" title="+44 - United Kingdom">+44 - United Kingdom</option><option value="+598" title="+598 - Uruguay">+598 - Uruguay</option><option value="+58" title="+58 - Venezuela">+58 - Venezuela</option><option value="+84" title="+84 - Vietnam">+84 - Vietnam</option><option value="+44" title="+44 - Wales">+44 - Wales</option>
-							</select>
-						</div>
-
-						<div class="col-9 mt-3">
-							<input type="number" id="login-form-password" name="login-form-password" value="" class="form-control not-dark" placeholder="Contact Number" />
-						</div>
-
-						<div class="col-12 mt-4">
-							<button class="button button-rounded btn-block nomargin" id="login-form-submit" name="login-form-submit" value="Submit">Submit</button>
-						</div>
-					</form>
-				</div>
-				
-			</div>
-		</div>
-
-
 		<!-- Featues Section
 				============================================= -->
 		<div class="mt-0 mb-0"
@@ -503,33 +498,10 @@
 									</p>
 								</div>
 
-
 								<span>This course will cover the Workday HCM Fundamentals & Technical concepts that will help you progress through your Workday HCM deployment. We will cover basic navigation, setup of the core system functionality, deployment process, perform administrative activities, business process configuration, compensation setup and configurable security In addition, we will cover using Report Writer, creating Calculated Fields, building EIB integrations. </span>
+								<p class="lead mb-0 mt-3">90 hours of live training / 12 Realtime Projects</p>
 							</div>
 						
-							<div class="row clearfix mt-4">
-
-								<div class="col-lg-4">
-									<a href="#modal-register" data-lightbox="inline"  class="button button-3d button-rounded btn-block button-large button-red text-white center nott ls0">Apply Now</a>											
-								</div>
-
-								<div class="col-lg-3 center">
-									<div class="footer-big-contacts banner-cd" style="padding-top: 8px;">
-										<span>Duration</span>
-										90 Hours
-									</div>
-
-								</div>
-
-									<div class=" col-lg-4 center">
-										<div class="footer-big-contacts banner-cd" style="padding-top: 8px;">
-												<span>Projects</span>
-												12 Realtime
-											</div>
-										
-										</div>
-
-									</div>
 								
 								</div>
 							</div>
@@ -538,12 +510,11 @@
 							============================================= -->
 							<div class=" col-lg-4">
 
-<div class="card course-card hover-effect noborder mt-5">
-															<div class="col_full mb-0">
-																<a href="#"><img class="card-img-top"
-																		src="images/courses/17.png"
-																		alt="Card image cap">
-																		<a href="images/videos/explore.webm" data-lightbox="iframe" class="play-video ml-3"><i class="icon-play"></i></a>
+								<div class="card course-card hover-effect noborder mt-3">
+									<div class="col_full mb-0">
+										<a href="images/videos/explore.webm" data-lightbox="iframe" >
+											<img class="card-img-top" src="images/courses/17.png" alt="Card image cap">
+											<div class="play-video ml-3"><i class="icon-play"></i></div>
 																	<div class="overlay">
 																		<div class="overlay-wrap ">
 																			<div class="overlay-wrap-center">
@@ -555,13 +526,15 @@
 															</div>
 															
 														</div>
+														
+														<button class="button side-panel-trigger mt-3 ml-0 button-3d button-rounded btn-block button-large button-red text-white nott ls0">Apply Now</button>											
 											
 										</div>
 
 									</div>
 								</div>
 
-		</div>
+							</div>
 
 
 						
@@ -577,7 +550,7 @@
 											<nav class="one-page-menu">
 												<ul>
 													<li><a href="#" data-href="#key">
-															<div>Key Features</div>
+															<div>Key Objectives</div>
 														</a></li>
 													<li><a href="#" data-href="#course">
 															<div>Course Content</div>
@@ -627,7 +600,7 @@
 												<div class="col-md-8">
 
 													<div id="key" class="heading-block nobottomborder mb-4 mt-4">
-														<h3 class="mb-3" style="font-size: 30px;">Key Features</h3>
+														<h3 class="mb-3" style="font-size: 30px;">Key Learning Points</h3>
 														<span>Consectetur adipisicing elit. Voluptate incidunt dolorum
 															perferendis accusamus nesciunt et est consequuntur placeat,
 															dolor quia. Consectetur adipisicing elit. Voluptate incidunt dolorum
