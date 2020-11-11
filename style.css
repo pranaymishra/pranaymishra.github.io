@@ -2,6 +2,65 @@
 	margin: 11px 0;
 }
 
+@media (min-width: 992px) {
+
+.toggle.toggle-bg .togglet i {
+	left: auto !important;
+	right: 24px;
+	line-height: 64px !important;
+	width: 20px;
+	font-size: 20px;
+}
+
+
+.toggle.toggle-bg .togglet, .toggle.toggle-bg .toggleta {
+	background-color: #F2F6FA !important;
+	padding: 10px 24px !important;
+}
+
+.toggle.toggle-bg .togglec {
+	background-color: #F2F6FA !important;
+
+}
+
+.togglec {
+	font-weight: 400;
+	font-size: 1em;
+	color: #888;
+	line-height: 1.7;
+}
+
+.togglet .toggle-icon {
+	-webkit-transition: transform .25s ease;
+	-o-transition: transform .25s ease;
+	transition: transform .25s ease;
+}
+
+.togglet.toggleta {
+	color: var(--themecolor) !important;
+}
+
+.togglet.toggleta .toggle-icon {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	color: var(--themecolor);
+}
+
+.toggle-all {
+	cursor: pointer;
+	float: right;
+	margin-bottom: 0px;
+	font-size: 14px;
+}
+
+.toggle-all.expanded {
+	color: var(--themecolor);
+}
+
+}
+
 .stack_nav ul li a.active h2::after {
     content: "";
     width: 100%;
@@ -101,36 +160,6 @@ select#exit_isd {
 .form-control-pill {
     border-radius: 23px !important;
 }
-
-.toggle {
-	margin-bottom: 25px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #EEE;
-
-}
-
-.toggle .togglet i.toggle-open {
-	display: block !important;
-	width: auto;
-	left: auto;
-	right: 20px;
-	font-size: 20px;
-	transform: rotate(45deg);
-	transition: transform .3s ease;
-}
-
-.toggle-closed { display: none !important; }
-
-.toggle .togglet.toggleta i.toggle-open {
-	display: block !important;
-	transform: rotate(90deg);
-	color: var(--themecolor, #0F66DD);
-}
-
-.toggle .togglet,
-.toggle .toggleta { padding-left: 15px; }
-
-.toggle .togglec { padding-top: 20px; }
 
 /* ----------------------------------------------------------------
 	Bootstrap Adjustments
@@ -9015,7 +9044,7 @@ body:not(.device-touch) .social-icon i {
 	line-height: 44px;
 }
 
-.toggle.toggle-bg .togglec { padding: 12px 0 0 36px; }
+.toggle.toggle-bg .togglec { padding: 0 24px 24px; }
 
 
 /* Toggle - Bordered

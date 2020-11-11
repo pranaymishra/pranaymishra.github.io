@@ -2479,7 +2479,35 @@ var SEMICOLON = SEMICOLON || {};
 					});
 				});
 			}
+			var $toggle = $('.toggle');
+			if( $toggle.length > 0 ) {
+				$toggle.each( function(){
+					var element = $(this),
+						elementState = element.attr('data-state');
+
+					if( elementState != 'open' ){
+						element.children('.togglec').hide();
+					} else {
+						element.children('.togglet').addClass("toggleta");
+					}
+
+					element.children('.toggle-all').off( 'click' ).on( 'click', function(){
+						// $(this).toggleClass('toggleta').next('.togglec').slideToggle(300);
+						$('.togglet').toggleClass('toggleta').next('.togglec').slideToggle(300);
+						$('.toggle-all').toggleClass("expanded");
+						if ($('.toggle-all').hasClass("expanded")) {
+							$('.toggle-all').html("Collapse all topics");
+						  } else {
+							$('.toggle-all').html("Expand all topics");
+						}
+						
+						return true;
+					});
+				});
+			}
 		},
+
+		
 
 		accordions: function(){
 			var $accordionEl = $('.accordion');
