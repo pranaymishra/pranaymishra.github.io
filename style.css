@@ -6361,7 +6361,7 @@ td.actions {
 
 .events .entry,
 .ievent {
-	padding: 20px;
+	padding: 10px 20px 10px 10px;
 	background-color: #F9F9F9;
 	border-bottom: 3px solid #EEE;
 }
@@ -7593,7 +7593,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .feature-box p {
 	margin: 8px 0 0 0;
-	color: #999;
+	color: #555;
 }
 
 .feature-box .before-heading { font-size: 14px; }
