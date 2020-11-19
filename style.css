@@ -7755,17 +7755,19 @@ body:not(.device-touch) .button.button-full strong {
 
 .feature-box.fbox-plain.fbox-small { padding-left: 42px; }
 
-.feature-box.fbox-plain.fbox-small .fbox-icon { width: 28px; }
+.feature-box.fbox-plain.fbox-small .fbox-icon { width: 24px; }
 
 .feature-box.fbox-plain.fbox-small h3 {
 	font-size: 15px;
-	line-height: 26px;
-	margin-bottom: 10px;
+    line-height: 28px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    text-transform: none;
 }
 
 .feature-box.fbox-plain.fbox-small p { margin-left: -42px; }
 
-.feature-box.fbox-plain.fbox-small .fbox-icon i { font-size: 28px; }
+.feature-box.fbox-plain.fbox-small .fbox-icon i { font-size: 24px; }
 
 .feature-box.fbox-plain.fbox-small .fbox-icon img { height: 28px; }
 

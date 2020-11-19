@@ -29,6 +29,37 @@
 	<link rel="stylesheet" href="demos/course/course.css" type="text/css" />
 	<!-- / -->
 
+	<style>
+
+#page-menu {
+	height: 0;
+	overflow: hidden;
+	-webkit-backface-visibility: hidden;
+}
+
+#page-menu #page-menu-wrap {
+	opacity: 0;
+	pointer-events: none;
+	-webkit-transition: all .4s ease;
+	-o-transition: all .4s ease;
+	transition: all .4s ease;
+	-webkit-transform: translate3d(0,-44px,0);
+	-o-transform: translate3d(0,-44px,0);
+	transform: translate3d(0,-44px,0);
+	transform-style: preserve-3d;
+	-webkit-backface-visibility: hidden;
+}
+
+#page-menu.sticky-page-menu { overflow: visible; }
+
+#page-menu.sticky-page-menu #page-menu-wrap {
+	opacity: 1;
+	pointer-events: auto;
+	-webkit-transform: translate3d(0,0,0);
+	-o-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+	</style>
 
 	<!-- Document Title
 	============================================= -->
@@ -636,7 +667,7 @@
 		<div class="mt-0 mb-0" style="padding: 40px 0 30px; background-color: #1e1e1c;">
 
 			<div class="container">
-				<div class="row">
+				<div class="row mb-5">
 
 					<div class="col-lg-8">
 						<div class="dark clearfix">
@@ -675,7 +706,7 @@
 									administrative activities, business process configuration, compensation setup and
 									configurable security In addition, we will cover using Report Writer, creating
 									Calculated Fields, building EIB integrations. </span>
-								<p class="lead mb-0 mt-3">90 hours of live training / 12 Realtime Projects</p>
+							
 							</div>
 
 
@@ -703,18 +734,57 @@
 
 						</div>
 
-						<button
-							class="button side-panel-trigger mt-3 ml-0 button-3d button-rounded btn-block button-large button-red text-white nott ls0">Apply
-							Now</button>
+					
 
 					</div>
 
 				</div>
 			</div>
 
+			
+
 		</div>
 
+		<div class="container">
 
+			<div class="card px-5 py-4 shadow" style="top: -60px;">
+			
+					<div class="row clearfix">
+						<div class="col-md-2 col-sm-12">
+							<div class="footer-big-contacts" style="padding-top: 8px;">
+								<span>Duration</span>
+								90 Hours
+							</div>	
+						</div>
+						
+						<div class="col-md-2 col-sm-6 col-12 mt-4 mt-md-0">
+							<div class="footer-big-contacts" style="padding-top: 8px;">
+								<span>Format</span>
+								Online
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-6 col-6">
+							<div class="footer-big-contacts" style="padding-top: 8px;">
+								<span>Timings</span>
+								Flexible
+							</div>
+						</div>
+						<div class="col-md-2 col-sm-6 col-12 mt-4 mt-md-0">
+							<div class="footer-big-contacts" style="padding-top: 8px;">
+								<span>Projects</span>
+								12 Realtime
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<button
+							class="button side-panel-trigger button-3d button-rounded btn-block button-large button-red text-white nott ls0">Apply
+							Now</button>
+						</div>
+					</div>
+				
+			</div>
+
+		</div>
 
 
 		<div id="page-menu">
@@ -771,14 +841,91 @@
 
 				<!-- Promo Section
 				============================================= -->
-				<div class="section p-0 mb-0 mt-4 bg-white">
+				<div class="section p-0 m-0 bg-white">
 					<div class="container">
 						<div class="row">
 
-							<div class="col-md-8">
+							<div class="col-md-9">
 
-								<div class=" auto-expand">
-									<div id="key" class="heading-block nobottomborder mb-4 mt-4">
+								<div class="bottommargin-sm">
+									
+										<div class="heading-block nobottomborder mb-0">
+											<h3 class="mb-3" style="font-size: 30px;">Key Features</h3>
+										</div>
+										<div class="container">
+											
+											<div class="row">
+													<div class="col-lg-6">
+														<div class="feature-box fbox-small fbox-plain">
+															<div class="fbox-icon">
+																<i class="icon-file"></i>
+															</div>
+															<h3>Certification & Job Assistance</h3>
+															
+														</div>
+													</div>
+													
+													<div class="col-lg-6">
+														<div class="feature-box fbox-small fbox-plain">
+															<div class="fbox-icon">
+																<i class="icon-graduation-cap" style="width: 24px;"></i>
+															</div>
+															<h3>Designed for Professionals</h3>
+															
+														</div>
+													</div>
+
+													<div class="col-lg-6">
+														<div class="feature-box fbox-small fbox-plain">
+															<div class="fbox-icon">
+																<i class="icon-file"></i>
+															</div>
+															<h3>Certification & Job Assistance</h3>
+															
+														</div>
+													</div>
+													
+													<div class="col-lg-6">
+														<div class="feature-box fbox-small fbox-plain">
+															<div class="fbox-icon">
+																<i class="icon-graduation-cap" style="width: 24px;"></i>
+															</div>
+															<h3>Designed for Professionals</h3>
+															
+														</div>
+													</div>
+
+
+													<div class="col-lg-6">
+														<div class="feature-box fbox-small fbox-plain">
+															<div class="fbox-icon">
+																<i class="icon-file"></i>
+															</div>
+															<h3>Certification & Job Assistance</h3>
+															
+														</div>
+													</div>
+													
+													<div class="col-lg-6">
+														<div class="feature-box fbox-small fbox-plain">
+															<div class="fbox-icon">
+																<i class="icon-graduation-cap" style="width: 24px;"></i>
+															</div>
+															<h3>Designed for Professionals</h3>
+															
+														</div>
+													</div>
+
+												
+											</div>
+											
+										</div>
+								
+									
+								</div>
+								<div class="clearfix"></div>
+								<div class="auto-expand">
+									<div id="key" class="heading-block nobottomborder mb-4">
 										<h3 class="mb-3" style="font-size: 30px;">Key Learning Points</h3>
 
 										<span>Consectetur adipisicing elit. Voluptate incidunt dolorum
@@ -1796,7 +1943,7 @@
 
 							</div>
 
-							<div class="col-md-4 mt-4 sticky-sidebar-wrap" style=" z-index: 6;">
+							<div class="col-md-3 sticky-sidebar-wrap" style=" z-index: 6;">
 								<div class="card shadow mt-4" data-animate="shake"
 									style="opacity: 1 !important; position: absolute;">
 									<div class="card-body">
@@ -1805,7 +1952,7 @@
 											Now!</div>
 										<h4 class="card-title ls-1 mt-4 t700 h5">Get Your Online Course!
 										</h4>
-										<h6 class="card-subtitle mb-4 t400 uppercase ls2 text-black-50">Free
+										<h6 class="card-subtitle mb-2 t400 uppercase ls2 text-black-50">Free
 											Registration here.</h6>
 
 										<div class="form-widget">
@@ -2060,7 +2207,7 @@
 
 												<div class="col_full mb-0">
 													<button
-														class="button button-3d button-rounded btn-block button-large button-red text-white nott ls0"
+														class="button button-3d button-rounded btn-block button-red text-white nott ls0 m-0"
 														type="submit" id="template-contactform-submit"
 														name="template-contactform-submit" value="submit">Apply It
 														Now</button>
