@@ -42,6 +42,9 @@
 	#side-panel .widget {
 		width: 225px !important;
 	}
+	.mt-md-15 {
+		margin-top: 15px !important;
+	}
 }
 
 @media (min-width: 992px) {
