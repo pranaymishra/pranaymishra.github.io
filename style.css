@@ -33,7 +33,14 @@
 	}
 
 	#side-panel {
-		width: 400px !important;
+		width: 270px !important;
+	}
+	#side-panel .side-panel-wrap {
+		width: 330px !important;
+    	padding: 30px !important;
+	}
+	#side-panel .widget {
+		width: 225px !important;
 	}
 }
 

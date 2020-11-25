@@ -323,7 +323,7 @@
 
 	body.top-search-open #primary-menu-trigger { opacity: 0; }
 
-	body.side-push-panel #side-panel-trigger-close a {
+	body #side-panel-trigger-close a {
 		display: block;
 		position: absolute;
 		z-index: 12;
