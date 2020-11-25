@@ -315,7 +315,7 @@ body.top-search-open #top-cart { opacity: 1 }
 	background: linear-gradient(180deg,hsla(0,0%,100%,0) -1%,hsla(0,0%,100%,.01) 0,#fff);
 }
 
-.auto-expand:hover { max-height: 500px; }
+.auto-expand:hover { max-height: 1000px; }
 .auto-expand:hover:after { background: transparent; }
 
 /* .auto-expand {

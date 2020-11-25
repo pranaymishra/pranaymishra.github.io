@@ -2,8 +2,6 @@
 	margin: 11px 0;
 }
 
-@media (min-width: 992px) {
-
 .toggle.toggle-bg .togglet i {
 	left: auto !important;
 	right: 24px;
@@ -15,13 +13,31 @@
 
 .toggle.toggle-bg .togglet, .toggle.toggle-bg .toggleta {
 	background-color: #F2F6FA !important;
-	padding: 10px 24px !important;
+	padding: 10px 44px 10px 24px !important;
 }
 
 .toggle.toggle-bg .togglec {
 	background-color: #F2F6FA !important;
 
 }
+
+@media (max-width: 991px) {
+	.toggle.toggle-bg .togglet, .toggle.toggle-bg .toggleta {
+		line-height: 24px !important;
+	}
+	.toggle.toggle-bg .togglet i {		
+		line-height: 44px !important;		
+	}
+	.ievent {
+		padding: 10px !important;
+	}
+
+	#side-panel {
+		width: 400px !important;
+	}
+}
+
+@media (min-width: 992px) {
 
 .togglec {
 	font-weight: 400;
