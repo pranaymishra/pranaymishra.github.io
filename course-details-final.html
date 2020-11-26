@@ -70,7 +70,7 @@
 <body class="stretched">
 	<div class="body-overlay"></div>
 
-	<div id="side-panel" class="bg-white">
+	<div id="side-panel" class="">
 
 		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a>
 		</div>
@@ -250,10 +250,8 @@
 						</div>
 
 						<div class="col_full mb-3">
-							<textarea type="textarea" id="template-contactform-message" name="template-contactform-message"
-								value="" class="sm-form-control border-form-control required"
-								placeholder="Message">
-							</textarea>
+							
+							<textarea name="event-registration-bio" id="event-registration-bio" class="sm-form-control border-form-control valid" cols="30" rows="2" placeholder="Write an optional message"></textarea>
 						</div>
 
 						<div class="col_full mb-0 center mb-3">
@@ -461,6 +459,10 @@
 									value="" class="sm-form-control border-form-control required"
 									placeholder="Phone Number" />
 							</div>
+							<div class="col_full mb-3">
+							
+								<textarea name="event-registration-bio" id="event-registration-bio" class="sm-form-control border-form-control valid" cols="30" rows="2" placeholder="Write an optional message"></textarea>
+							</div>
 						
 							<div class="col_full mb-0 center">
 								<button
@@ -664,6 +666,10 @@
 									<input type="text" id="template-contactform-phone" name="template-contactform-phone"
 										value="" class="sm-form-control border-form-control required"
 										placeholder="Phone Number" />
+								</div>
+								<div class="col_full mb-3">
+							
+									<textarea name="event-registration-bio" id="event-registration-bio" class="sm-form-control border-form-control valid" cols="30" rows="2" placeholder="Write an optional message"></textarea>
 								</div>
 							
 								<div class="col_full mb-0 center">
@@ -1136,8 +1142,7 @@
 						</div>
 					</div>
 
-					<!-- Registration Foem
-							============================================= -->
+				
 					<div class=" col-lg-4">
 
 						<div class="card course-card hover-effect noborder mt-3">
@@ -1630,7 +1635,7 @@
 												<!-- <h4 class="text-white mt-2 mb-2"
 																	style="line-height: 1;">We can setup training at
 																	your convinient time.</h4> -->
-												<a class="button button-circle button-3d button-small text-white mt-1 mb-0">Contact
+												<a href="#modal-register" data-lightbox="inline" class="button button-circle button-3d button-small text-white mt-1 mb-0">Contact
 													Us</a>
 											</div>
 
@@ -2258,6 +2263,10 @@
 														name="template-contactform-phone" value=""
 														class="sm-form-control border-form-control required"
 														placeholder="Phone Number" />
+												</div>
+
+												<div class="col_full mb-3">
+													<textarea name="event-registration-bio" id="event-registration-bio" class="sm-form-control border-form-control valid" cols="30" rows="2" placeholder="Write an optional message"></textarea>
 												</div>
 
 												<div class="col_full mb-0 center">

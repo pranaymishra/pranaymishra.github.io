@@ -1491,6 +1491,7 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 #primary-menu.style-2 {
 	float: none;
 	max-width: none;
+	border-top: 1px solid #F5F5F5;
 }
 
 #primary-menu.style-2 > div > ul { float: left; }
@@ -11656,7 +11657,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	position: relative;
 	overflow: hidden;
 	margin: 35px 0;
-	color: #E5E5E5;
+	color: #888;
 	width: 100%;
 }
 
@@ -11671,7 +11672,7 @@ input[type=checkbox]:not(:checked) + label.error { display: block !important; }
 	top: 8px;
 	left: 30px;
 	height: 0;
-	border-top: 1px solid #EEE;
+	border-top: 1px solid #ddd;
 }
 
 .divider.divider-thick:after,

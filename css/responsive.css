@@ -667,7 +667,9 @@
 	}
 
 	#page-menu ul ul a { padding-left: 25px; }
-
+	#header {
+		border: none;
+	}
 
 	/* Responsive Sticky Header
 	-----------------------------------------------------------------*/
