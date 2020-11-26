@@ -869,7 +869,7 @@
 								</ul>
 							</li>
 
-							<li>
+							<li class="d-none d-lg-block">
 
 								<div id="top-search-input">
 									<form action="" class="search-form" method="get">
@@ -907,10 +907,7 @@
 
 						</ul>
 
-						<!-- Top Search
-						============================================= -->
-						<!-- #top-search end -->
-
+						
 						<div class="header-buttons d-none d-lg-block">
 							<a href="#"
 								class="button button-rounded button-border button-border-thin button-small">Teach on
@@ -918,10 +915,20 @@
 							<!-- <a href="#" class="button button-rounded button-small ml-2">Enquiry</a> -->
 						</div>
 
-					</div>
+							<!-- Top Search
+						============================================= -->
+						<div id="top-search" class="d-block d-lg-none">
+							<a href="#" id="top-search-trigger"><i class="icon-search3"></i><i class="icon-line-cross"></i></a>
+							<form action="search.html" method="get">
+								<input type="text" name="q" class="form-control" value="" placeholder="Type &amp; Hit Enter..">
+							</form>
+						</div><!-- #top-search end -->
+
+					</div>	
+				
 
 				</nav><!-- #primary-menu end -->
-
+					
 			</div>
 
 		</header><!-- #header end -->
