@@ -2,6 +2,14 @@
 	margin: 11px 0;
 }
 
+.iconlist.iconlist-large li:first-child {
+	margin-top: 0px;
+}
+
+.iconlist.iconlist-large li:last-child {
+	margin-bottom: 0px;
+}
+
 .toggle.toggle-bg .togglet i {
 	left: auto !important;
 	right: 24px;
