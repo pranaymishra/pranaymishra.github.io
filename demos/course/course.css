@@ -253,13 +253,11 @@
 @media (min-width: 992px) {
 
 	.heading-block h3 {
-		font-size: 42px;
-		letter-spacing: -1px;
+		font-size: 26px;
 	}
 
 	.heading-block h1 {
-		font-size: 42px;
-		letter-spacing: -1px;
+		font-size: 36px;
 		text-transform: none;
 	}
 

@@ -5,7 +5,7 @@
 .toggle.toggle-bg .togglet i {
 	left: auto !important;
 	right: 24px;
-	line-height: 64px !important;
+	line-height: 55px !important;
 	width: 20px;
 	font-size: 20px;
 }
@@ -47,12 +47,18 @@
 	}
 }
 
-@media (min-width: 992px) {
+.objective {
+	font-size: 16px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    text-shadow: none;
+    color: #F5F5F5;
+}
 
 .togglec {
 	font-weight: 400;
 	font-size: 1em;
-	color: #888;
+	color: #444;
 	line-height: 1.7;
 }
 
@@ -83,8 +89,6 @@
 
 .toggle-all.expanded {
 	color: var(--themecolor);
-}
-
 }
 
 .stack_nav ul li a.active h2::after {
@@ -9024,7 +9028,7 @@ body:not(.device-touch) .social-icon i {
 .toggle {
 	display: block;
 	position: relative;
-	margin: 0 0 20px 0;
+	margin: 0 0 9px 0;
 }
 
 .toggle .togglet,
@@ -9076,7 +9080,7 @@ body:not(.device-touch) .social-icon i {
 .toggle.toggle-bg .togglet,
 .toggle.toggle-bg .toggleta {
 	background-color: #EEE;
-	line-height: 44px;
+	line-height: 39px;
 	padding: 0 0 0 36px;
 	border-radius: 2px;
 }
