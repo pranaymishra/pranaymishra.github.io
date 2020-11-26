@@ -30,35 +30,36 @@
 	<!-- / -->
 
 	<style>
+		#page-menu {
+			height: 0;
+			overflow: hidden;
+			-webkit-backface-visibility: hidden;
+		}
 
-#page-menu {
-	height: 0;
-	overflow: hidden;
-	-webkit-backface-visibility: hidden;
-}
+		#page-menu #page-menu-wrap {
+			opacity: 0;
+			pointer-events: none;
+			-webkit-transition: all .4s ease;
+			-o-transition: all .4s ease;
+			transition: all .4s ease;
+			-webkit-transform: translate3d(0, -44px, 0);
+			-o-transform: translate3d(0, -44px, 0);
+			transform: translate3d(0, -44px, 0);
+			transform-style: preserve-3d;
+			-webkit-backface-visibility: hidden;
+		}
 
-#page-menu #page-menu-wrap {
-	opacity: 0;
-	pointer-events: none;
-	-webkit-transition: all .4s ease;
-	-o-transition: all .4s ease;
-	transition: all .4s ease;
-	-webkit-transform: translate3d(0,-44px,0);
-	-o-transform: translate3d(0,-44px,0);
-	transform: translate3d(0,-44px,0);
-	transform-style: preserve-3d;
-	-webkit-backface-visibility: hidden;
-}
+		#page-menu.sticky-page-menu {
+			overflow: visible;
+		}
 
-#page-menu.sticky-page-menu { overflow: visible; }
-
-#page-menu.sticky-page-menu #page-menu-wrap {
-	opacity: 1;
-	pointer-events: auto;
-	-webkit-transform: translate3d(0,0,0);
-	-o-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
+		#page-menu.sticky-page-menu #page-menu-wrap {
+			opacity: 1;
+			pointer-events: auto;
+			-webkit-transform: translate3d(0, 0, 0);
+			-o-transform: translate3d(0, 0, 0);
+			transform: translate3d(0, 0, 0);
+		}
 	</style>
 
 	<!-- Document Title
@@ -70,23 +71,24 @@
 <body class="stretched">
 	<div class="body-overlay"></div>
 
-	<div id="side-panel" class="bg-white">
+	<div id="side-panel" class="">
 
 		<div id="side-panel-trigger-close" class="side-panel-trigger"><a href="#"><i class="icon-line-cross"></i></a>
 		</div>
-	
-		<div class="side-panel-wrap">
+
+		<div class="side-panel-wrap mt-3 pt-3">
 
 			<div class="widget quick-contact-widget form-widget clearfix">
-				<div class="heading-block mb-3 nobottomborder">
+				<div class="mb-3 center nobottomborder">
 
-					<h3 style="font-size: 20px;">Apply Now</h3>
+					<h3 class="mb-3 t400">Join us for a free demo
+					</h3>
 					<span>
-						Learn Angular 10!
+						See for yourself why Corporates trust Techzyo to achieve their training goals
 					</span>
 				</div>
 
-
+				<div class="divider divider-short divider-center m-0"><i class="icon-email2"></i></div>
 				<div class="form-widget">
 					<div class="form-result"></div>
 
@@ -95,25 +97,242 @@
 
 						<div class="form-process"></div>
 
-						<div class="col_full">
+						<div class="col_full mb-3">
 							<input type="text" id="template-contactform-name" name="template-contactform-name" value=""
 								class="sm-form-control border-form-control required" placeholder="Full Name" />
 						</div>
-						<div class="col_full">
+						<div class="col_full mb-3">
 							<input type="email" id="template-contactform-email" name="template-contactform-email"
 								value="" class="required email sm-form-control border-form-control"
 								placeholder="Email Address" />
 						</div>
 
-						<div class="col_one_sixth">
+						<div class="col_one_sixth mb-3">
 							<select name="phone_code" id="exit_isd" class="sm-form-control border-form-control">
 
-								<option value="+1" title="+1 - United States">+1 &nbsp; United States</option>
-								<option value="+91" title="+91 - India">+91 &nbsp; India</option>
-								<option value="+1" title="+1 - Canada">+1 &nbsp; Canada</option>
-								<option value="+61" title="+61 - Australia">+61 &nbsp; Australia</option>
-								<option value="+65" title="+65 - Singapore">+65 &nbsp; Singapore</option>
-								<option value="+64" title="+64 - New Zealand">+64 &nbsp; New Zealand</option>
+								<option value="+1" title="+1 - United States">+1 &nbsp;&nbsp;&nbsp; United States
+								</option>
+								<option value="+91" title="+91 - India">+91 &nbsp;&nbsp; India</option>
+								<option value="+1" title="+1 - Canada">+1 &nbsp;&nbsp;&nbsp;&nbsp; Canada</option>
+								<option value="+61" title="+61 - Australia">+61 &nbsp;&nbsp;&nbsp; Australia</option>
+								<option value="+65" title="+65 - Singapore">+65 &nbsp;&nbsp;&nbsp; Singapore</option>
+								<option value="+64" title="+64 - New Zealand">+64 &nbsp;&nbsp;&nbsp; New Zealand
+								</option>
+								<option value="+49" title="+49 - Germany">+49 - Germany</option>
+								<option value="+971" title="+971 - United Arab Emirates">+971 - United Arab Emirates
+								</option>
+								<option value="+852" title="+852 - Hong Kong">+852 - Hong Kong</option>
+								<option value="+506" title="+506 - Costa Rica">+506 - Costa Rica</option>
+								<option value="+353" title="+353 - Ireland">+353 - Ireland</option>
+								<option value="+358" title="+358 - Aland Islands">+358 - Aland Islands</option>
+								<option value="+355" title="+355 - Albania">+355 - Albania</option>
+								<option value="+213" title="+213 - Algeria">+213 - Algeria</option>
+								<option value="+376" title="+376 - Andorra">+376 - Andorra</option>
+								<option value="+54" title="+54 - Argentina">+54 - Argentina</option>
+								<option value="+374" title="+374 - Armenia">+374 - Armenia</option>
+								<option value="+61" title="+61 - Australia">+61 - Australia</option>
+								<option value="+43" title="+43 - Austria">+43 - Austria</option>
+								<option value="+994" title="+994 - Azerbaijan">+994 - Azerbaijan</option>
+								<option value="+973" title="+973 - Bahrain">+973 - Bahrain</option>
+								<option value="+880" title="+880 - Bangladesh">+880 - Bangladesh</option>
+								<option value="+375" title="+375 - Belarus">+375 - Belarus</option>
+								<option value="+32" title="+32 - Belgium">+32 - Belgium</option>
+								<option value="+591" title="+591 - Bolivia">+591 - Bolivia</option>
+								<option value="+387" title="+387 - Bosnia and Herzegovina">+387 - Bosnia and Herzegovina
+								</option>
+								<option value="+267" title="+267 - Botswana">+267 - Botswana</option>
+								<option value="+55" title="+55 - Brazil">+55 - Brazil</option>
+								<option value="+359" title="+359 - Bulgaria">+359 - Bulgaria</option>
+								<option value="+855" title="+855 - Cambodia">+855 - Cambodia</option>
+								<option value="+1" title="+1 - Canada">+1 - Canada</option>
+								<option value="+34" title="+34 - Canary Islands">+34 - Canary Islands</option>
+								<option value="+56" title="+56 - Chile">+56 - Chile</option>
+								<option value="+86" title="+86 - China">+86 - China</option>
+								<option value="+57" title="+57 - Colombia">+57 - Colombia</option>
+								<option value="+385" title="+385 - Croatia">+385 - Croatia</option>
+								<option value="+357" title="+357 - Cyprus">+357 - Cyprus</option>
+								<option value="+420" title="+420 - Czech Republic">+420 - Czech Republic</option>
+								<option value="+45" title="+45 - Denmark">+45 - Denmark</option>
+								<option value="+20" title="+20 - Egypt">+20 - Egypt</option>
+								<option value="+372" title="+372 - Estonia">+372 - Estonia</option>
+								<option value="+251" title="+251 - Ethiopia">+251 - Ethiopia</option>
+								<option value="+298" title="+298 - Faroe Islands">+298 - Faroe Islands</option>
+								<option value="+679" title="+679 - Fiji">+679 - Fiji</option>
+								<option value="+358" title="+358 - Finland">+358 - Finland</option>
+								<option value="+33" title="+33 - France">+33 - France</option>
+								<option value="+995" title="+995 - Georgia">+995 - Georgia</option>
+								<option value="+49" title="+49 - Germany">+49 - Germany</option>
+								<option value="+233" title="+233 - Ghana">+233 - Ghana</option>
+								<option value="+350" title="+350 - Gibraltar">+350 - Gibraltar</option>
+								<option value="+30" title="+30 - Greece">+30 - Greece</option>
+								<option value="+44" title="+44 - Guernsey">+44 - Guernsey</option>
+								<option value="+852" title="+852 - Hong Kong">+852 - Hong Kong</option>
+								<option value="+36" title="+36 - Hungary">+36 - Hungary</option>
+								<option value="+354" title="+354 - Iceland">+354 - Iceland</option>
+								<option value="+91" title="+91 - India">+91 - India</option>
+								<option value="+62" title="+62 - Indonesia">+62 - Indonesia</option>
+								<option value="+98" title="+98 - Iran">+98 - Iran</option>
+								<option value="+964" title="+964 - Iraq">+964 - Iraq</option>
+								<option value="+353" title="+353 - Ireland">+353 - Ireland</option>
+								<option value="+44" title="+44 - Isle of Man">+44 - Isle of Man</option>
+								<option value="+972" title="+972 - Israel">+972 - Israel</option>
+								<option value="+39" title="+39 - Italy">+39 - Italy</option>
+								<option value="+81" title="+81 - Japan">+81 - Japan</option>
+								<option value="+44" title="+44 - Jersey">+44 - Jersey</option>
+								<option value="+962" title="+962 - Jordan">+962 - Jordan</option>
+								<option value="+254" title="+254 - Kenya">+254 - Kenya</option>
+								<option value="+381" title="+381 - Kosovo">+381 - Kosovo</option>
+								<option value="+965" title="+965 - Kuwait">+965 - Kuwait</option>
+								<option value="+371" title="+371 - Latvia">+371 - Latvia</option>
+								<option value="+961" title="+961 - Lebanon">+961 - Lebanon</option>
+								<option value="+231" title="+231 - Liberia">+231 - Liberia</option>
+								<option value="+218" title="+218 - Libya">+218 - Libya</option>
+								<option value="+423" title="+423 - Liechtenstein">+423 - Liechtenstein</option>
+								<option value="+370" title="+370 - Lithuania">+370 - Lithuania</option>
+								<option value="+352" title="+352 - Luxembourg">+352 - Luxembourg</option>
+								<option value="+389" title="+389 - Macedonia">+389 - Macedonia</option>
+								<option value="+60" title="+60 - Malaysia">+60 - Malaysia</option>
+								<option value="+356" title="+356 - Malta">+356 - Malta</option>
+								<option value="+52" title="+52 - Mexico">+52 - Mexico</option>
+								<option value="+373" title="+373 - Moldova">+373 - Moldova</option>
+								<option value="+377" title="+377 - Monaco">+377 - Monaco</option>
+								<option value="+976" title="+976 - Mongolia">+976 - Mongolia</option>
+								<option value="+382" title="+382 - Montenegro">+382 - Montenegro</option>
+								<option value="+212" title="+212 - Morocco">+212 - Morocco</option>
+								<option value="+95" title="+95 - Myanmar">+95 - Myanmar</option>
+								<option value="+31" title="+31 - Netherlands">+31 - Netherlands</option>
+								<option value="+64" title="+64 - New Zealand">+64 - New Zealand</option>
+								<option value="+234" title="+234 - Nigeria">+234 - Nigeria</option>
+								<option value="+44" title="+44 - Northern Ireland">+44 - Northern Ireland</option>
+								<option value="+47" title="+47 - Norway">+47 - Norway</option>
+								<option value="+968" title="+968 - Oman">+968 - Oman</option>
+								<option value="+507" title="+507 - Panama">+507 - Panama</option>
+								<option value="+675" title="+675 - Papua New Guinea">+675 - Papua New Guinea</option>
+								<option value="+51" title="+51 - Peru">+51 - Peru</option>
+								<option value="+63" title="+63 - Philippines">+63 - Philippines</option>
+								<option value="+48" title="+48 - Poland">+48 - Poland</option>
+								<option value="+351" title="+351 - Portugal">+351 - Portugal</option>
+								<option value="+974" title="+974 - Qatar">+974 - Qatar</option>
+								<option value="+40" title="+40 - Romania">+40 - Romania</option>
+								<option value="+7" title="+7 - Russian Federation">+7 - Russian Federation</option>
+								<option value="+378" title="+378 - San Marino">+378 - San Marino</option>
+								<option value="+966" title="+966 - Saudi Arabia">+966 - Saudi Arabia</option>
+								<option value="+44" title="+44 - Scotland">+44 - Scotland</option>
+								<option value="+381" title="+381 - Serbia">+381 - Serbia</option>
+								<option value="+65" title="+65 - Singapore">+65 - Singapore</option>
+								<option value="+421" title="+421 - Slovakia">+421 - Slovakia</option>
+								<option value="+386" title="+386 - Slovenia">+386 - Slovenia</option>
+								<option value="+27" title="+27 - South Africa">+27 - South Africa</option>
+								<option value="+82" title="+82 - South Korea">+82 - South Korea</option>
+								<option value="+34" title="+34 - Spain">+34 - Spain</option>
+								<option value="+94" title="+94 - Srilanka">+94 - Srilanka</option>
+								<option value="+249" title="+249 - Sudan">+249 - Sudan</option>
+								<option value="+47" title="+47 - Svalbard and Jan Mayen">+47 - Svalbard and Jan Mayen
+								</option>
+								<option value="+46" title="+46 - Sweden">+46 - Sweden</option>
+								<option value="+41" title="+41 - Switzerland">+41 - Switzerland</option>
+								<option value="+886" title="+886 - Taiwan, ROC">+886 - Taiwan, ROC</option>
+								<option value="+255" title="+255 - Tanzania">+255 - Tanzania</option>
+								<option value="+66" title="+66 - Thailand">+66 - Thailand</option>
+								<option value="+216" title="+216 - Tunisia">+216 - Tunisia</option>
+								<option value="+90" title="+90 - Turkey">+90 - Turkey</option>
+								<option value="+380" title="+380 - Ukraine">+380 - Ukraine</option>
+								<option value="+971" title="+971 - United Arab Emirates">+971 - United Arab Emirates
+								</option>
+								<option value="+44" title="+44 - United Kingdom">+44 - United Kingdom</option>
+								<option value="+598" title="+598 - Uruguay">+598 - Uruguay</option>
+								<option value="+58" title="+58 - Venezuela">+58 - Venezuela</option>
+								<option value="+84" title="+84 - Vietnam">+84 - Vietnam</option>
+								<option value="+44" title="+44 - Wales">+44 - Wales</option>
+							</select>
+						</div>
+						<div class="col_five_sixth col_last mb-3">
+							<input type="text" id="template-contactform-phone" name="template-contactform-phone"
+								value="" class="sm-form-control border-form-control required"
+								placeholder="Phone Number" />
+						</div>
+
+						<div class="col_full mb-3">
+
+							<textarea name="event-registration-bio" id="event-registration-bio"
+								class="sm-form-control border-form-control valid" cols="30" rows="2"
+								placeholder="Write an optional message"></textarea>
+						</div>
+
+						<div class="col_full mb-0 center mb-3">
+							<button class="button button-3d button-rounded button-red text-white " type="submit"
+								id="template-contactform-submit" name="template-contactform-submit" value="submit">Apply
+								Now</button>
+							<br>
+							<small style="display: block; font-size: 12px; margin-top: 15px; color: #AAA;"><em>We'll
+									do our best to get back to you within 6-8
+									working hours.</em></small>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="col_full hidden">
+							<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck"
+								value="" class="sm-form-control" />
+						</div>
+
+						<input type="hidden" name="prefix" value="template-contactform-">
+
+					</form>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- Modal -->
+	<div class="modal1 mfp-hide" id="modal-register">
+
+		<div class="card divcenter" style="max-width: 440px;">
+
+			<div class="card-header pt-4 noborder nobg center">
+				<h3 class="mb-0 t400">Join us for a free demo
+
+				</h3>
+
+				<p class="pt-3 px-4 mb-0">
+					See for yourself why Corporates trust Techzyo to achieve their training goals
+				</p>
+				<button title="Close (Esc)" type="button" class="mfp-close d-block">×</button>
+			</div>
+			<div class="card-body mx-4 pt-2 pb-4">
+
+				<div class="divider divider-short divider-center m-0"><i class="icon-email2"></i></div>
+				<div class="form-widget">
+					<div class="form-result"></div>
+					<form class="nobottommargin" id="template-contactform" name="template-contactform">
+
+						<div class="form-process"></div>
+
+						<div class="col_full mb-3">
+							<input type="text" id="template-contactform-name" name="template-contactform-name" value=""
+								class="sm-form-control border-form-control required" placeholder="Full Name" />
+						</div>
+						<div class="col_full mb-3">
+							<input type="email" id="template-contactform-email" name="template-contactform-email"
+								value="" class="required email sm-form-control border-form-control"
+								placeholder="Email Address" />
+						</div>
+
+						<div class="col_one_sixth mb-3">
+							<select name="phone_code" id="exit_isd" class="sm-form-control border-form-control">
+
+								<option value="+1" title="+1 - United States">+1
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; United States</option>
+								<option value="+91" title="+91 - India">+91 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; India
+								</option>
+								<option value="+1" title="+1 - Canada">+1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									Canada</option>
+								<option value="+61" title="+61 - Australia">+61 - Australia</option>
+								<option value="+65" title="+65 - Singapore">+65 - Singapore</option>
+								<option value="+64" title="+64 - New Zealand">+64 - New Zealand</option>
 								<option value="+49" title="+49 - Germany">+49 - Germany</option>
 								<option value="+971" title="+971 - United Arab Emirates">+971 - United Arab Emirates
 								</option>
@@ -247,12 +466,17 @@
 								value="" class="sm-form-control border-form-control required"
 								placeholder="Phone Number" />
 						</div>
+						<div class="col_full mb-3">
 
-						<div class="col_full mb-0">
-							<button
-								class="button button-3d button-rounded button-large button-red text-white nott ls0"
-								type="submit" id="template-contactform-submit" name="template-contactform-submit"
-								value="submit">Apply Now</button>
+							<textarea name="event-registration-bio" id="event-registration-bio"
+								class="sm-form-control border-form-control valid" cols="30" rows="2"
+								placeholder="Write an optional message"></textarea>
+						</div>
+
+						<div class="col_full mb-0 center">
+							<button class="button button-3d button-rounded button-red text-white" type="submit"
+								id="template-contactform-submit" name="template-contactform-submit"
+								value="submit">Submit</button>
 							<br>
 							<small style="display: block; font-size: 12px; margin-top: 15px; color: #AAA;"><em>We'll
 									do our best to get back to you within 6-8
@@ -270,11 +494,221 @@
 
 					</form>
 				</div>
-
 			</div>
 
 		</div>
+	</div>
 
+	<!-- Modal -->
+	<div class="modal1 mfp-hide" id="modal-mobile">
+
+		<div class="card divcenter" style="max-width: 440px;">
+
+			<div class="card-header pt-4 noborder nobg center">
+				<h3 class="mb-0 t400">Join us for a free demo
+
+				</h3>
+
+				<p class="pt-3 px-4 mb-0">
+					See for yourself why Corporates trust Techzyo to achieve their training goals
+				</p>
+				<button title="Close (Esc)" type="button" class="mfp-close d-block">×</button>
+			</div>
+			<div class="card-body mx-4 pt-2 pb-4">
+
+				<div class="divider divider-short divider-center m-0"><i class="icon-email2"></i></div>
+				<div class="form-widget">
+					<div class="form-result"></div>
+					<form class="nobottommargin" id="template-contactform" name="template-contactform">
+
+						<div class="form-process"></div>
+
+						<div class="col_full mb-3">
+							<input type="text" id="template-contactform-name" name="template-contactform-name" value=""
+								class="sm-form-control border-form-control required" placeholder="Full Name" />
+						</div>
+						<div class="col_full mb-3">
+							<input type="email" id="template-contactform-email" name="template-contactform-email"
+								value="" class="required email sm-form-control border-form-control"
+								placeholder="Email Address" />
+						</div>
+
+						<div class="col_one_sixth mb-3">
+							<select name="phone_code" id="exit_isd" class="sm-form-control border-form-control">
+
+								<option value="+1" title="+1 - United States">+1
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; United States</option>
+								<option value="+91" title="+91 - India">+91 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; India
+								</option>
+								<option value="+1" title="+1 - Canada">+1 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									Canada</option>
+								<option value="+61" title="+61 - Australia">+61 - Australia</option>
+								<option value="+65" title="+65 - Singapore">+65 - Singapore</option>
+								<option value="+64" title="+64 - New Zealand">+64 - New Zealand</option>
+								<option value="+49" title="+49 - Germany">+49 - Germany</option>
+								<option value="+971" title="+971 - United Arab Emirates">+971 - United Arab Emirates
+								</option>
+								<option value="+852" title="+852 - Hong Kong">+852 - Hong Kong</option>
+								<option value="+506" title="+506 - Costa Rica">+506 - Costa Rica</option>
+								<option value="+353" title="+353 - Ireland">+353 - Ireland</option>
+								<option value="+358" title="+358 - Aland Islands">+358 - Aland Islands</option>
+								<option value="+355" title="+355 - Albania">+355 - Albania</option>
+								<option value="+213" title="+213 - Algeria">+213 - Algeria</option>
+								<option value="+376" title="+376 - Andorra">+376 - Andorra</option>
+								<option value="+54" title="+54 - Argentina">+54 - Argentina</option>
+								<option value="+374" title="+374 - Armenia">+374 - Armenia</option>
+								<option value="+61" title="+61 - Australia">+61 - Australia</option>
+								<option value="+43" title="+43 - Austria">+43 - Austria</option>
+								<option value="+994" title="+994 - Azerbaijan">+994 - Azerbaijan</option>
+								<option value="+973" title="+973 - Bahrain">+973 - Bahrain</option>
+								<option value="+880" title="+880 - Bangladesh">+880 - Bangladesh</option>
+								<option value="+375" title="+375 - Belarus">+375 - Belarus</option>
+								<option value="+32" title="+32 - Belgium">+32 - Belgium</option>
+								<option value="+591" title="+591 - Bolivia">+591 - Bolivia</option>
+								<option value="+387" title="+387 - Bosnia and Herzegovina">+387 - Bosnia and Herzegovina
+								</option>
+								<option value="+267" title="+267 - Botswana">+267 - Botswana</option>
+								<option value="+55" title="+55 - Brazil">+55 - Brazil</option>
+								<option value="+359" title="+359 - Bulgaria">+359 - Bulgaria</option>
+								<option value="+855" title="+855 - Cambodia">+855 - Cambodia</option>
+								<option value="+1" title="+1 - Canada">+1 - Canada</option>
+								<option value="+34" title="+34 - Canary Islands">+34 - Canary Islands</option>
+								<option value="+56" title="+56 - Chile">+56 - Chile</option>
+								<option value="+86" title="+86 - China">+86 - China</option>
+								<option value="+57" title="+57 - Colombia">+57 - Colombia</option>
+								<option value="+385" title="+385 - Croatia">+385 - Croatia</option>
+								<option value="+357" title="+357 - Cyprus">+357 - Cyprus</option>
+								<option value="+420" title="+420 - Czech Republic">+420 - Czech Republic</option>
+								<option value="+45" title="+45 - Denmark">+45 - Denmark</option>
+								<option value="+20" title="+20 - Egypt">+20 - Egypt</option>
+								<option value="+372" title="+372 - Estonia">+372 - Estonia</option>
+								<option value="+251" title="+251 - Ethiopia">+251 - Ethiopia</option>
+								<option value="+298" title="+298 - Faroe Islands">+298 - Faroe Islands</option>
+								<option value="+679" title="+679 - Fiji">+679 - Fiji</option>
+								<option value="+358" title="+358 - Finland">+358 - Finland</option>
+								<option value="+33" title="+33 - France">+33 - France</option>
+								<option value="+995" title="+995 - Georgia">+995 - Georgia</option>
+								<option value="+49" title="+49 - Germany">+49 - Germany</option>
+								<option value="+233" title="+233 - Ghana">+233 - Ghana</option>
+								<option value="+350" title="+350 - Gibraltar">+350 - Gibraltar</option>
+								<option value="+30" title="+30 - Greece">+30 - Greece</option>
+								<option value="+44" title="+44 - Guernsey">+44 - Guernsey</option>
+								<option value="+852" title="+852 - Hong Kong">+852 - Hong Kong</option>
+								<option value="+36" title="+36 - Hungary">+36 - Hungary</option>
+								<option value="+354" title="+354 - Iceland">+354 - Iceland</option>
+								<option value="+91" title="+91 - India">+91 - India</option>
+								<option value="+62" title="+62 - Indonesia">+62 - Indonesia</option>
+								<option value="+98" title="+98 - Iran">+98 - Iran</option>
+								<option value="+964" title="+964 - Iraq">+964 - Iraq</option>
+								<option value="+353" title="+353 - Ireland">+353 - Ireland</option>
+								<option value="+44" title="+44 - Isle of Man">+44 - Isle of Man</option>
+								<option value="+972" title="+972 - Israel">+972 - Israel</option>
+								<option value="+39" title="+39 - Italy">+39 - Italy</option>
+								<option value="+81" title="+81 - Japan">+81 - Japan</option>
+								<option value="+44" title="+44 - Jersey">+44 - Jersey</option>
+								<option value="+962" title="+962 - Jordan">+962 - Jordan</option>
+								<option value="+254" title="+254 - Kenya">+254 - Kenya</option>
+								<option value="+381" title="+381 - Kosovo">+381 - Kosovo</option>
+								<option value="+965" title="+965 - Kuwait">+965 - Kuwait</option>
+								<option value="+371" title="+371 - Latvia">+371 - Latvia</option>
+								<option value="+961" title="+961 - Lebanon">+961 - Lebanon</option>
+								<option value="+231" title="+231 - Liberia">+231 - Liberia</option>
+								<option value="+218" title="+218 - Libya">+218 - Libya</option>
+								<option value="+423" title="+423 - Liechtenstein">+423 - Liechtenstein</option>
+								<option value="+370" title="+370 - Lithuania">+370 - Lithuania</option>
+								<option value="+352" title="+352 - Luxembourg">+352 - Luxembourg</option>
+								<option value="+389" title="+389 - Macedonia">+389 - Macedonia</option>
+								<option value="+60" title="+60 - Malaysia">+60 - Malaysia</option>
+								<option value="+356" title="+356 - Malta">+356 - Malta</option>
+								<option value="+52" title="+52 - Mexico">+52 - Mexico</option>
+								<option value="+373" title="+373 - Moldova">+373 - Moldova</option>
+								<option value="+377" title="+377 - Monaco">+377 - Monaco</option>
+								<option value="+976" title="+976 - Mongolia">+976 - Mongolia</option>
+								<option value="+382" title="+382 - Montenegro">+382 - Montenegro</option>
+								<option value="+212" title="+212 - Morocco">+212 - Morocco</option>
+								<option value="+95" title="+95 - Myanmar">+95 - Myanmar</option>
+								<option value="+31" title="+31 - Netherlands">+31 - Netherlands</option>
+								<option value="+64" title="+64 - New Zealand">+64 - New Zealand</option>
+								<option value="+234" title="+234 - Nigeria">+234 - Nigeria</option>
+								<option value="+44" title="+44 - Northern Ireland">+44 - Northern Ireland</option>
+								<option value="+47" title="+47 - Norway">+47 - Norway</option>
+								<option value="+968" title="+968 - Oman">+968 - Oman</option>
+								<option value="+507" title="+507 - Panama">+507 - Panama</option>
+								<option value="+675" title="+675 - Papua New Guinea">+675 - Papua New Guinea</option>
+								<option value="+51" title="+51 - Peru">+51 - Peru</option>
+								<option value="+63" title="+63 - Philippines">+63 - Philippines</option>
+								<option value="+48" title="+48 - Poland">+48 - Poland</option>
+								<option value="+351" title="+351 - Portugal">+351 - Portugal</option>
+								<option value="+974" title="+974 - Qatar">+974 - Qatar</option>
+								<option value="+40" title="+40 - Romania">+40 - Romania</option>
+								<option value="+7" title="+7 - Russian Federation">+7 - Russian Federation</option>
+								<option value="+378" title="+378 - San Marino">+378 - San Marino</option>
+								<option value="+966" title="+966 - Saudi Arabia">+966 - Saudi Arabia</option>
+								<option value="+44" title="+44 - Scotland">+44 - Scotland</option>
+								<option value="+381" title="+381 - Serbia">+381 - Serbia</option>
+								<option value="+65" title="+65 - Singapore">+65 - Singapore</option>
+								<option value="+421" title="+421 - Slovakia">+421 - Slovakia</option>
+								<option value="+386" title="+386 - Slovenia">+386 - Slovenia</option>
+								<option value="+27" title="+27 - South Africa">+27 - South Africa</option>
+								<option value="+82" title="+82 - South Korea">+82 - South Korea</option>
+								<option value="+34" title="+34 - Spain">+34 - Spain</option>
+								<option value="+94" title="+94 - Srilanka">+94 - Srilanka</option>
+								<option value="+249" title="+249 - Sudan">+249 - Sudan</option>
+								<option value="+47" title="+47 - Svalbard and Jan Mayen">+47 - Svalbard and Jan Mayen
+								</option>
+								<option value="+46" title="+46 - Sweden">+46 - Sweden</option>
+								<option value="+41" title="+41 - Switzerland">+41 - Switzerland</option>
+								<option value="+886" title="+886 - Taiwan, ROC">+886 - Taiwan, ROC</option>
+								<option value="+255" title="+255 - Tanzania">+255 - Tanzania</option>
+								<option value="+66" title="+66 - Thailand">+66 - Thailand</option>
+								<option value="+216" title="+216 - Tunisia">+216 - Tunisia</option>
+								<option value="+90" title="+90 - Turkey">+90 - Turkey</option>
+								<option value="+380" title="+380 - Ukraine">+380 - Ukraine</option>
+								<option value="+971" title="+971 - United Arab Emirates">+971 - United Arab Emirates
+								</option>
+								<option value="+44" title="+44 - United Kingdom">+44 - United Kingdom</option>
+								<option value="+598" title="+598 - Uruguay">+598 - Uruguay</option>
+								<option value="+58" title="+58 - Venezuela">+58 - Venezuela</option>
+								<option value="+84" title="+84 - Vietnam">+84 - Vietnam</option>
+								<option value="+44" title="+44 - Wales">+44 - Wales</option>
+							</select>
+						</div>
+						<div class="col_five_sixth col_last">
+							<input type="text" id="template-contactform-phone" name="template-contactform-phone"
+								value="" class="sm-form-control border-form-control required"
+								placeholder="Phone Number" />
+						</div>
+						<div class="col_full mb-3">
+
+							<textarea name="event-registration-bio" id="event-registration-bio"
+								class="sm-form-control border-form-control valid" cols="30" rows="2"
+								placeholder="Write an optional message"></textarea>
+						</div>
+
+						<div class="col_full mb-0 center">
+							<button class="button button-3d button-rounded button-red text-white" type="submit"
+								id="template-contactform-submit" name="template-contactform-submit"
+								value="submit">Submit</button>
+							<br>
+							<small style="display: block; font-size: 12px; margin-top: 15px; color: #AAA;"><em>We'll
+									do our best to get back to you within 6-8
+									working hours.</em></small>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="col_full hidden">
+							<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck"
+								value="" class="sm-form-control" />
+						</div>
+
+						<input type="hidden" name="prefix" value="template-contactform-">
+
+					</form>
+				</div>
+			</div>
+
+		</div>
 	</div>
 
 	<!-- Document Wrapper
@@ -288,20 +722,12 @@
 			<div class="container clearfix">
 				<p class="center mb-0">Mid Month Madness - Upto 30% Off OFFER ENDING IN :
 
-					<span class="days digit" style="background: #ffc300;">02</span>
-					<span class="days_ref text">D</span>
+					<span id="demo">
+						
+					</span>
 
-					<span class="hours digit" style="background: #ffc300;">06</span>
-					<span class="hours_ref text">H</span>
-
-					<span class="minutes digit" style="background: #ffc300;">50</span>
-					<span class="minutes_ref text">M</span>
-
-					<span class="seconds last digit" style="background: #ffc300;">12</span>
-					<span class="seconds_ref text">S.</span>
-
-					<a href="#" class="shopnow">GRAB NOW</a>
-					<a href="#" id="close-bar"><i class="icon-line-cross "></i></a>
+					<a href="#modal-register" data-lightbox="inline" class="shopnow">GRAB NOW</a>
+					<a href="#" id="close-bar" class="fright"><i class="icon-line-cross "></i></a>
 				</p>
 			</div>
 
@@ -320,10 +746,8 @@
 
 					<div class="container clearfix">
 						<div id="logo">
-							<a href="index.html" class="standard-logo"><img src="images/02.png"
-									alt="techzyo Logo"></a>
-							<a href="index.html" class="retina-logo"><img src="images/02.png"
-									alt="techzyo Logo"></a>
+							<a href="index.html" class="standard-logo"><img src="images/02.png" alt="techzyo Logo"></a>
+							<a href="index.html" class="retina-logo"><img src="images/02.png" alt="techzyo Logo"></a>
 						</div>
 						<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
@@ -333,7 +757,7 @@
 								</a>
 								<ul>
 									<li><a href="#">
-											<div><i class="icon-line2-user"></i>Teacher Training</div>
+											<div> Teacher Training</div>
 										</a>
 										<ul>
 											<li><a href="#">
@@ -357,7 +781,7 @@
 										</ul>
 									</li>
 									<li><a href="#">
-											<div><i class="icon-chart-bar1"></i>Business</div>
+											<div> Business</div>
 										</a>
 										<ul>
 											<li><a href="#">
@@ -390,7 +814,7 @@
 										</ul>
 									</li>
 									<li><a href="#">
-											<div><i class="icon-code1"></i>Development</div>
+											<div> Development</div>
 										</a>
 										<ul>
 											<li><a href="#">
@@ -417,7 +841,7 @@
 										</ul>
 									</li>
 									<li><a href="#">
-											<div><i class="icon-line2-screen-smartphone"></i>IT & Software</div>
+											<div> IT & Software</div>
 										</a>
 										<ul>
 											<li><a href="#">
@@ -440,175 +864,8 @@
 												</a></li>
 										</ul>
 									</li>
-									<li><a href="#">
-											<div><i class="icon-music1"></i>Music</div>
-										</a>
-										<ul>
-											<li><a href="#">
-													<div>All Music Classes</div>
-												</a>
-												<ul>
-													<li><a href="#">
-															<div>Level 3</div>
-														</a></li>
-												</ul>
-											</li>
-											<li><a href="#">
-													<div>Instrumental</div>
-												</a></li>
-											<li><a href="#">
-													<div>Vocals</div>
-												</a></li>
-											<li><a href="#">
-													<div>Lyrics</div>
-												</a></li>
-											<li><a href="#">
-													<div>Others</div>
-												</a></li>
-										</ul>
-									</li>
-									<li><a href="#">
-											<div><i class="icon-line2-game-controller"></i>Lifestyle</div>
-										</a>
-										<ul>
-											<li><a href="#">
-													<div>All Lifestyle Training</div>
-												</a>
-												<ul>
-													<li><a href="#">
-															<div>Level 3</div>
-														</a></li>
-												</ul>
-											</li>
-											<li><a href="#">
-													<div>Art &amp; Crafts</div>
-												</a></li>
-											<li><a href="#">
-													<div>Foods & Beverages</div>
-												</a></li>
-											<li><a href="#">
-													<div>Gaming</div>
-												</a></li>
-											<li><a href="#">
-													<div>Others</div>
-												</a></li>
-										</ul>
-									</li>
-									<li><a href="#">
-											<div><i class="icon-line2-globe"></i>Language</div>
-										</a>
-										<ul>
-											<li><a href="#">
-													<div>All Languages</div>
-												</a>
-												<ul>
-													<li><a href="#">
-															<div>Level 3</div>
-														</a></li>
-												</ul>
-											</li>
-											<li><a href="#">
-													<div>English</div>
-												</a></li>
-											<li><a href="#">
-													<div>Spanish</div>
-												</a></li>
-											<li><a href="#">
-													<div>Germans</div>
-												</a></li>
-											<li><a href="#">
-													<div>Hindi</div>
-												</a></li>
-											<li><a href="#">
-													<div>Russian</div>
-												</a></li>
-											<li><a href="#">
-													<div>Others</div>
-												</a></li>
-										</ul>
-									</li>
-									<li><a href="#">
-											<div><i class="icon-health"></i>Health &amp; Fitness</div>
-										</a>
-										<ul>
-											<li><a href="#">
-													<div>All Health &amp; Fitness</div>
-												</a>
-												<ul>
-													<li><a href="#">
-															<div>Level 3</div>
-														</a></li>
-												</ul>
-											</li>
-											<li><a href="#">
-													<div>Yoga</div>
-												</a></li>
-											<li><a href="#">
-													<div>Gym</div>
-												</a></li>
-											<li><a href="#">
-													<div>Sports</div>
-												</a></li>
-											<li><a href="#">
-													<div>Nutrition</div>
-												</a></li>
-											<li><a href="#">
-													<div>Others</div>
-												</a></li>
-										</ul>
-									</li>
-									<li><a href="#">
-											<div><i class="icon-line2-crop"></i>Design</div>
-										</a>
-										<ul>
-											<li><a href="#">
-													<div>All Designs</div>
-												</a>
-												<ul>
-													<li><a href="#">
-															<div>Level 3</div>
-														</a></li>
-												</ul>
-											</li>
-											<li><a href="#">
-													<div>Game Design</div>
-												</a></li>
-											<li><a href="#">
-													<div>Graphic Design</div>
-												</a></li>
-											<li><a href="#">
-													<div>Web Design</div>
-												</a></li>
-											<li><a href="#">
-													<div>Others</div>
-												</a></li>
-										</ul>
-									</li>
-
-									<li><a href="#">
-											<div><i class="icon-food"></i>Food</div>
-										</a>
-										<ul>
-											<li><a href="#">
-													<div>All Food Recipes</div>
-												</a>
-												<ul>
-													<li><a href="#">
-															<div>Level 3</div>
-														</a></li>
-												</ul>
-											</li>
-											<li><a href="#">
-													<div>Heathy Foods</div>
-												</a></li>
-											<li><a href="#">
-													<div>Fast Foods</div>
-												</a></li>
-											<li><a href="#">
-													<div>Others</div>
-												</a></li>
-										</ul>
-									</li>
+								
+								
 								</ul>
 							</li>
 
@@ -713,15 +970,14 @@
 									administrative activities, business process configuration, compensation setup and
 									configurable security In addition, we will cover using Report Writer, creating
 									Calculated Fields, building EIB integrations. </span>
-							
+
 							</div>
 
 
 						</div>
 					</div>
 
-					<!-- Registration Foem
-							============================================= -->
+
 					<div class=" col-lg-4">
 
 						<div class="card course-card hover-effect noborder mt-3">
@@ -741,54 +997,57 @@
 
 						</div>
 
-					
+
 
 					</div>
 
 				</div>
 			</div>
 
-			
+
 
 		</div>
 
 		<div class="container">
 
 			<div class="card px-5 py-4 shadow" style="top: -60px;">
-			
-					<div class="row clearfix">
-						<div class="col-md-2">
-							<div class="footer-big-contacts" style="padding-top: 8px;">
-								<span>Duration</span>
-								90 Hours
-							</div>	
-						</div>
-						
-						<div class="col-md-2">
-							<div class="footer-big-contacts" style="padding-top: 8px;">
-								<span>Format</span>
-								Online
-							</div>
-						</div>
-						<div class="col-md-2">
-							<div class="footer-big-contacts" style="padding-top: 8px;">
-								<span>Timings</span>
-								Flexible
-							</div>
-						</div>
-						<div class="col-md-3">
-							<div class="footer-big-contacts" style="padding-top: 8px;">
-								<span>Projects</span>
-								12 Realtime
-							</div>
-						</div>
-						<div class="col-lg-3 mt-md-15">
-							<button
-							class="button side-panel-trigger button-3d button-rounded button-large button-red text-white nott ls0" style="width: 200px;">
-							Apply Now</button>
+
+				<div class="row clearfix">
+					<div class="col-md-2">
+						<div class="footer-big-contacts" style="padding-top: 8px;">
+							<span>Duration</span>
+							90 Hours
 						</div>
 					</div>
-				
+
+					<div class="col-md-2">
+						<div class="footer-big-contacts" style="padding-top: 8px;">
+							<span>Format</span>
+							Online
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="footer-big-contacts" style="padding-top: 8px;">
+							<span>Timings</span>
+							Flexible
+						</div>
+					</div>
+					<div class="col-md-3">
+
+					</div>
+					<div class="col-lg-3 mt-md-15">
+						<button
+							class="button d-none d-lg-block side-panel-trigger button-3d button-rounded button-large button-red text-white nott"
+							style="width: 200px;">
+							Apply Now</button>
+
+						<a href="#modal-mobile" data-lightbox="inline"
+							class="button d-block d-lg-none center button-3d button-rounded button-large button-red text-white nott"
+							style="width: 200px;">
+							Apply Now</a>
+					</div>
+				</div>
+
 			</div>
 
 		</div>
@@ -810,17 +1069,12 @@
 								<li><a href="#" data-href="#course">
 										<div>Course Content</div>
 									</a></li>
-								<li><a href="#" data-href="#projects">
-										<div>Projects</div>
-									</a></li>
+
 								<li><a href="#" data-href="#upcoming">
 										<div>Upcoming Batches</div>
 									</a></li>
 								<li><a href="#" data-href="#faq">
 										<div>FAQ’s</div>
-									</a></li>
-								<li><a href="#" data-href="#certification">
-										<div>Certification</div>
 									</a></li>
 
 								<li><a href="#" data-href="#comments-title">
@@ -839,22 +1093,25 @@
 
 		</div>
 
-<!-- Modal -->
-<div class="modal1 mfp-hide" id="demo">
-	<div class="block divcenter" style="background-color: #FFF; max-width: 700px;">
-		<div class="section center nomargin" style="padding: 15px;">
-			<h3 class="mb-0">Angular 10 - Project based live training</h3>
+		<!-- Modal -->
+		<div class="modal1 mfp-hide" id="demo">
+			<div class="block divcenter" style="background-color: #FFF; max-width: 700px;">
+				<div class="section center nomargin" style="padding: 15px;">
+					<h3 class="mb-0">Angular 10 - Project based live training</h3>
+				</div>
+				<div class="row">
+
+					<div class="col-lg-12">
+						<iframe width="100%" height="350" src="https://www.youtube.com/embed/Qbs3GMkHofw"
+							frameborder="0"
+							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+							allowfullscreen></iframe>
+
+					</div>
+				</div>
+
+			</div>
 		</div>
-		<div class="row">
-			
-<div class="col-lg-12">
-				<iframe width="100%" height="350" src="https://www.youtube.com/embed/Qbs3GMkHofw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-	
-</div>		
-		</div>
-		
-	</div>
-</div>
 
 		<!-- Content
 		============================================= -->
@@ -870,83 +1127,83 @@
 					<div class="container">
 						<div class="row">
 
-							<div class="col-md-9">
+							<div class="col-md-8">
 
 								<div class="bottommargin-sm">
-									
-										<div class="heading-block nobottomborder mb-0">
-											<h3 class="mb-3" style="font-size: 30px;">Key Features</h3>
-										</div>
-										<div class="container">
-											
-											<div class="row">
-													<div class="col-lg-6">
-														<div class="feature-box fbox-small fbox-plain">
-															<div class="fbox-icon">
-																<i class="icon-file"></i>
-															</div>
-															<h3>Certification & Job Assistance</h3>
-															
-														</div>
-													</div>
-													
-													<div class="col-lg-6">
-														<div class="feature-box fbox-small fbox-plain">
-															<div class="fbox-icon">
-																<i class="icon-graduation-cap" style="width: 24px;"></i>
-															</div>
-															<h3>Designed for Professionals</h3>
-															
-														</div>
-													</div>
 
-													<div class="col-lg-6">
-														<div class="feature-box fbox-small fbox-plain">
-															<div class="fbox-icon">
-																<i class="icon-file"></i>
-															</div>
-															<h3>Certification & Job Assistance</h3>
-															
-														</div>
-													</div>
-													
-													<div class="col-lg-6">
-														<div class="feature-box fbox-small fbox-plain">
-															<div class="fbox-icon">
-																<i class="icon-graduation-cap" style="width: 24px;"></i>
-															</div>
-															<h3>Designed for Professionals</h3>
-															
-														</div>
-													</div>
+									<div class="heading-block nobottomborder mb-0">
+										<h3 class="mb-3" style="font-size: 30px;">Key Features</h3>
+									</div>
+									<div class="container">
 
-
-													<div class="col-lg-6">
-														<div class="feature-box fbox-small fbox-plain">
-															<div class="fbox-icon">
-																<i class="icon-file"></i>
-															</div>
-															<h3>Certification & Job Assistance</h3>
-															
-														</div>
+										<div class="row">
+											<div class="col-lg-6">
+												<div class="feature-box fbox-small fbox-plain">
+													<div class="fbox-icon">
+														<i class="icon-file"></i>
 													</div>
-													
-													<div class="col-lg-6">
-														<div class="feature-box fbox-small fbox-plain">
-															<div class="fbox-icon">
-																<i class="icon-graduation-cap" style="width: 24px;"></i>
-															</div>
-															<h3>Designed for Professionals</h3>
-															
-														</div>
-													</div>
+													<h3>Certification & Job Assistance</h3>
 
-												
+												</div>
 											</div>
-											
+
+											<div class="col-lg-6">
+												<div class="feature-box fbox-small fbox-plain">
+													<div class="fbox-icon">
+														<i class="icon-graduation-cap" style="width: 24px;"></i>
+													</div>
+													<h3>Designed for Professionals</h3>
+
+												</div>
+											</div>
+
+											<div class="col-lg-6">
+												<div class="feature-box fbox-small fbox-plain">
+													<div class="fbox-icon">
+														<i class="icon-file"></i>
+													</div>
+													<h3>Certification & Job Assistance</h3>
+
+												</div>
+											</div>
+
+											<div class="col-lg-6">
+												<div class="feature-box fbox-small fbox-plain">
+													<div class="fbox-icon">
+														<i class="icon-graduation-cap" style="width: 24px;"></i>
+													</div>
+													<h3>Designed for Professionals</h3>
+
+												</div>
+											</div>
+
+
+											<div class="col-lg-6">
+												<div class="feature-box fbox-small fbox-plain">
+													<div class="fbox-icon">
+														<i class="icon-file"></i>
+													</div>
+													<h3>Certification & Job Assistance</h3>
+
+												</div>
+											</div>
+
+											<div class="col-lg-6">
+												<div class="feature-box fbox-small fbox-plain">
+													<div class="fbox-icon">
+														<i class="icon-graduation-cap" style="width: 24px;"></i>
+													</div>
+													<h3>Designed for Professionals</h3>
+
+												</div>
+											</div>
+
+
 										</div>
-								
-									
+
+									</div>
+
+
 								</div>
 								<div class="clearfix"></div>
 								<div class="auto-expand">
@@ -961,7 +1218,8 @@
 
 									</div>
 
-									<div class="col_half mb-0">
+
+									<div class="mb-0">
 										<ul class="iconlist iconlist-large iconlist-color">
 
 											<li><i class="icon-check-circle1 top--3 fs-18"></i> NO Angular 1 or Angular
@@ -983,33 +1241,11 @@
 										</ul>
 									</div>
 
-									<div class="col_half col_last mb-0">
-										<ul class="iconlist iconlist-large iconlist-color">
-
-											<li><i class="icon-check-circle1 top--3 fs-18"></i> NO Angular 1 or Angular
-												2 knowledge
-												is required!
-
-											</li>
-											<li><i class="icon-check-circle1 top--3 fs-18"></i> Basic HTML and CSS
-												knowledge helps,
-												but isn't a must-have</li>
-											<li><i class="icon-check-circle1 top--3 fs-18"></i> Prior TypeScript
-												knowledge also
-												helps but isn't necessary to benefit from this course</li>
-											<li><i class="icon-check-circle1 top--3 fs-18"></i> Basic JavaScript
-												knowledge is
-												required</li>
-
-
-										</ul>
-									</div>
-									
 								</div>
 								<div class="center d-lg-none d-block">
-									
+
 									<p class="color"><i>Click to expand</i></p>
-									
+
 								</div>
 								<div class="clearfix"></div>
 								<div id="course" class="heading-block mt-3 pt-3 mb-3 nobottomborder">
@@ -1142,153 +1378,9 @@
 										</div>
 									</div>
 
-									<a href="#" class="button button-3d button-red"><span><i
-												class="icon-line-download"></i> Download Content</span></a>
-
 
 								</div>
 
-								<div class="container clearfix">
-									<div class="row">
-										<div class="heading-block mt-4 pt-3 mb-3 nobottomborder">
-											<h3 style="font-size: 20px;">Tools Covered</h3>
-			
-										</div>
-			
-										<!-- Clients Images -->
-										<div class="row clearfix">
-											<div class="col-sm-3 col-lg-2 center"><a href="#"><img
-														src="demos/hosting/images/clients/1.png" alt="" class="clients"></a></div>
-											<div class="col-sm-3 col-lg-2 center"><a href="#"><img
-														src="demos/hosting/images/clients/2.png" alt="" class="clients"></a></div>
-											<div class="col-sm-3 col-lg-2 center"><a href="#"><img
-														src="demos/hosting/images/clients/3.png" alt="" class="clients"></a></div>
-											<div class="col-sm-3 col-lg-2 center"><a href="#"><img
-														src="demos/hosting/images/clients/4.png" alt="" class="clients"></a></div>
-											<div class="col-sm-3 col-lg-2 center"><a href="#"><img
-														src="demos/hosting/images/clients/5.png" alt="" class="clients "></a></div>
-											<div class="col-sm-3 col-lg-2 center"><a href="#"><img
-														src="demos/hosting/images/clients/6.png" alt="" class="clients"></a></div>
-											<!-- <div class="col-sm-3 col-lg-2 center"><a href="#"><img src="demos/hosting/images/clients/7.png" alt="" class="clients mt-5"></a></div>
-																<div class="col-sm-3 col-lg-2 center"><a href="#"><img src="demos/hosting/images/clients/8.png" alt="" class="clients mt-5"></a></div>
-																<div class="col-sm-3 col-lg-2 center"><a href="#"><img src="demos/hosting/images/clients/9.png" alt="" class="clients mt-5"></a></div>
-																<div class="col-sm-3 col-lg-2 center"><a href="#"><img src="demos/hosting/images/clients/10.png" alt="" class="clients mt-5"></a></div>
-																<div class="col-sm-3 col-lg-2 center"><a href="#"><img src="demos/hosting/images/clients/11.png" alt="" class="clients mt-5"></a></div>
-																<div class="col-sm-3 col-lg-2 center"><a href="#"><img src="demos/hosting/images/clients/12.png" alt="" class="clients mt-5"></a></div> -->
-										</div>
-									</div>
-								</div>
-								<div class="divider divider-center mt-5 mb-0"><i class="icon-dot-circle"></i></div>
-								<div id="projects" class="heading-block pt-4 mb-3 nobottomborder">
-									<h3 style="font-size: 30px;">Industry Projects</h3>
-									<span>Consectetur adipisicing elit. Voluptate incidunt dolorum
-										perferendis accusamus nesciunt et est consequuntur placeat.</span>
-								</div>
-								
-					<!-- Modal -->
-					<div class="modal1 mfp-hide" id="myModal1">
-						<div class="block divcenter" style="background-color: #FFF; max-width: 500px;">
-							<div class="section center nomargin" style="padding: 25px;">
-								<h3 class="mb-0">A Simple Example of a Header</h3>
-							</div>
-							<div class="center" style="padding: 25px;">
-								<p class="nobottommargin">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum delectus, tenetur obcaecati porro! Expedita nostrum tempora quia provident perspiciatis inventore, autem eaque, quod explicabo, ipsum, facilis aliquid! Sapiente, possimus quo!</p>
-							</div>
-							
-						</div>
-					</div>
-
-							<div class="row">
-
-								<div class="col-lg-4 p-2">
-									<a href="#myModal1" data-lightbox="inline" >
-										<div class="feature-box mt-0 hover-effect fbox-center p-3 shadow-sm fbox-bg fbox-light fbox-effect">
-											<h3 class="mb-1 capitalize">
-												IMDb Movie Analysis
-											</h3>
-											<p class="mb-3">
-												Analyze movie data from the past hundred years and find out various insights...
-											</p>
-											<i>Learn more..</i>
-										</div>
-									</a>
-								</div>
-
-								<div class="col-lg-4 p-2">
-									<a href="#myModal1" data-lightbox="inline" >
-										<div class="feature-box mt-0 hover-effect fbox-center p-3 shadow-sm fbox-bg fbox-light fbox-effect">
-											<h3 class="mb-1 capitalize">
-												IMDb Movie Analysis
-											</h3>
-											<p class="mb-3">
-												Analyze movie data from the past hundred years and find out various insights...
-											</p>
-											<i>Learn more..</i>
-										</div>
-									</a>
-								</div>
-
-								<div class="col-lg-4 p-2">
-									<a href="#myModal1" data-lightbox="inline" >
-										<div class="feature-box mt-0 hover-effect fbox-center p-3 shadow-sm fbox-bg fbox-light fbox-effect">
-											<h3 class="mb-1 capitalize">
-												IMDb Movie Analysis
-											</h3>
-											<p class="mb-3">
-												Analyze movie data from the past hundred years and find out various insights...
-											</p>
-											<i>Learn more..</i>
-										</div>
-									</a>
-								</div>
-
-								<div class="col-lg-4 p-2">
-									<a href="#myModal1" data-lightbox="inline" >
-										<div class="feature-box mt-0 hover-effect fbox-center p-3 shadow-sm fbox-bg fbox-light fbox-effect">
-											<h3 class="mb-1 capitalize">
-												IMDb Movie Analysis
-											</h3>
-											<p class="mb-3">
-												Analyze movie data from the past hundred years and find out various insights...
-											</p>
-											<i>Learn more..</i>
-										</div>
-									</a>
-								</div>
-
-								<div class="col-lg-4 p-2">
-									<a href="#myModal1" data-lightbox="inline" >
-										<div class="feature-box mt-0 hover-effect fbox-center p-3 shadow-sm fbox-bg fbox-light fbox-effect">
-											<h3 class="mb-1 capitalize">
-												IMDb Movie Analysis
-											</h3>
-											<p class="mb-3">
-												Analyze movie data from the past hundred years and find out various insights...
-											</p>
-											<i>Learn more..</i>
-										</div>
-									</a>
-								</div>
-
-								<div class="col-lg-4 p-2">
-									<a href="#myModal1" data-lightbox="inline" >
-										<div class="feature-box mt-0 hover-effect fbox-center p-3 shadow-sm fbox-bg fbox-light fbox-effect">
-											<h3 class="mb-1 capitalize">
-												IMDb Movie Analysis
-											</h3>
-											<p class="mb-3">
-												Analyze movie data from the past hundred years and find out various insights...
-											</p>
-											<i>Learn more..</i>
-										</div>
-									</a>
-								</div>
-
-					
-
-							</div>
-
-						
 								<div class="heading-block noborder mt-5 mb-3">
 									<h3 style="font-size: 30px;">Upcoming Batches</h3>
 									<!-- <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -1309,18 +1401,18 @@
 												Weekdays</div>
 											<div class="row">
 												<div class="col-lg-12 upcoming center">
-													<p class="subtitle nott"><i class="icon-calendar-1"></i>	
+													<p class="subtitle nott"><i class="icon-calendar-1"></i>
 														Starts On</small>
 													</p>
 													<h3 class="mb-0 nott ls0" style="line-height: 1;">
 														<span>30th</span> Nov, 2020
 													</h3>
-													
+
 													<p class="text-dark mt-2"><i class="icon-clock1"></i> 7:00
 														AM IST</p>
 
 												</div>
-												
+
 											</div>
 										</div>
 									</div>
@@ -1331,18 +1423,18 @@
 												Weekdays</div>
 											<div class="row">
 												<div class="col-lg-12 upcoming center">
-													<p class="subtitle nott"><i class="icon-calendar-1"></i>	
+													<p class="subtitle nott"><i class="icon-calendar-1"></i>
 														Starts On</small>
 													</p>
 													<h3 class="mb-0 nott ls0" style="line-height: 1;">
 														<span>17th</span> Oct, 2020
 													</h3>
-													
+
 													<p class="text-dark mt-2"><i class="icon-clock1"></i> 7:00
 														AM IST</p>
 
 												</div>
-												
+
 											</div>
 										</div>
 									</div>
@@ -1352,21 +1444,21 @@
 											class="feature-box hover-effect mt-1 p-3 shadow-sm fbox-center fbox-bg fbox-light fbox-effect">
 											<div class="badge registration-badge shadow-sm alert-warning">
 												Weekend</div>
-												<div class="row">
-													<div class="col-lg-12 upcoming center">
-														<p class="subtitle nott"><i class="icon-calendar-1"></i>	
-															Starts On</small>
-														</p>
-														<h3 class="mb-0 nott ls0" style="line-height: 1;">
-															<span>28th</span> Nov, 2020
-														</h3>
-														
-														<p class="text-dark mt-2"><i class="icon-clock1"></i> 7:00
-															AM IST</p>
-	
-													</div>
-													
+											<div class="row">
+												<div class="col-lg-12 upcoming center">
+													<p class="subtitle nott"><i class="icon-calendar-1"></i>
+														Starts On</small>
+													</p>
+													<h3 class="mb-0 nott ls0" style="line-height: 1;">
+														<span>28th</span> Nov, 2020
+													</h3>
+
+													<p class="text-dark mt-2"><i class="icon-clock1"></i> 7:00
+														AM IST</p>
+
 												</div>
+
+											</div>
 										</div>
 									</div>
 
@@ -1376,14 +1468,15 @@
 											<div class="badge registration-badge shadow-sm alert-danger">
 												Flexible timing</div>
 											<div class="upcoming center">
-												<h3 class="subtitle nott text-white mt-3" style="line-height: 1.3;"> 
-													<i class="icon-calendar-times1"></i> 
-													Schedule does't	match?
+												<h3 class="subtitle nott text-white mt-3" style="line-height: 1.3;">
+													<i class="icon-calendar-times1"></i>
+													Schedule does't match?
 												</h3>
 												<!-- <h4 class="text-white mt-2 mb-2"
 																	style="line-height: 1;">We can setup training at
 																	your convinient time.</h4> -->
-												<a class="button button-circle button-3d button-small text-white mt-1 mb-0">Contact
+												<a href="#modal-register" data-lightbox="inline"
+													class="button button-circle button-3d button-small text-white mt-1 mb-0">Contact
 													Us</a>
 											</div>
 
@@ -1405,8 +1498,9 @@
 
 								<div class="accordion accordion-bg accordion-border clearfix">
 
-									<h4 class="acctitle acctitlec">Our Mission<i class="acc-closed icon-chevron- "></i><i
-										class="acc-open icon-chevron-up "></i>
+									<h4 class="acctitle acctitlec">Our Mission<i
+											class="acc-closed icon-chevron- "></i><i
+											class="acc-open icon-chevron-up "></i>
 									</h4>
 									<div class="acc_content clearfix">Donec sed odio dui. Nulla
 										vitae elit libero, a pharetra augue. Nullam id dolor id nibh
@@ -1414,7 +1508,7 @@
 										venenatis dapibus posuere velit aliquet.</div>
 
 									<h4 class="acctitle">What we Do?<i class="acc-closed icon-chevron-down "></i><i
-										class="acc-open icon-chevron-up "></i>
+											class="acc-open icon-chevron-up "></i>
 									</h4>
 									<div class="acc_content clearfix" style="display: none;">Integer
 										posuere erat a ante venenatis dapibus posuere velit aliquet.
@@ -1423,7 +1517,7 @@
 										fermentum.</div>
 
 									<h4 class="acctitle">Our Company's<i class="acc-closed icon-chevron-down "></i><i
-										class="acc-open icon-chevron-up "></i>
+											class="acc-open icon-chevron-up "></i>
 										Values</h4>
 									<div class="acc_content clearfix" style="display: none;">Nullam id
 										dolor id nibh ultricies vehicula ut id elit. Integer posuere
@@ -1431,7 +1525,7 @@
 										mollis, est non commodo luctus. Aenean lacinia bibendum nulla
 										sed consectetur.</div>
 									<h4 class="acctitle">Our Company's<i class="acc-closed icon-chevron-down "></i><i
-										class="acc-open icon-chevron-up "></i>
+											class="acc-open icon-chevron-up "></i>
 										Values</h4>
 									<div class="acc_content clearfix" style="display: none;">Nullam id
 										dolor id nibh ultricies vehicula ut id elit. Integer posuere
@@ -1440,7 +1534,7 @@
 										sed consectetur.</div>
 
 									<h4 class="acctitle">Our Mission<i class="acc-closed icon-chevron-down "></i><i
-										class="acc-open icon-chevron-up "></i>
+											class="acc-open icon-chevron-up "></i>
 									</h4>
 
 									<div class="acc_content clearfix">Donec sed odio dui. Nulla
@@ -1459,8 +1553,9 @@
 											nulla sed consectetur. Cras mattis consectetur purus sit amet
 											fermentum.</div>
 
-										<h4 class="acctitle">Our Company's<i class="acc-closed icon-chevron-down "></i><i
-											class="acc-open icon-chevron-up "></i>
+										<h4 class="acctitle">Our Company's<i
+												class="acc-closed icon-chevron-down "></i><i
+												class="acc-open icon-chevron-up "></i>
 											Values</h4>
 										<div class="acc_content clearfix" style="display: none;">Nullam id
 											dolor id nibh ultricies vehicula ut id elit. Integer posuere
@@ -1469,8 +1564,9 @@
 											sed consectetur.</div>
 
 
-										<h4 class="acctitle">Our Company's<i class="acc-closed icon-chevron-down "></i><i
-											class="acc-open icon-chevron-up "></i>
+										<h4 class="acctitle">Our Company's<i
+												class="acc-closed icon-chevron-down "></i><i
+												class="acc-open icon-chevron-up "></i>
 											Values</h4>
 										<div class="acc_content clearfix" style="display: none;">Nullam id
 											dolor id nibh ultricies vehicula ut id elit. Integer posuere
@@ -1489,25 +1585,25 @@
 								<div class="container">
 
 									<div class="heading-block nobottomborder mb-0">
-										<h3 style="font-size: 30px;">Related Courses</h3>			
+										<h3 style="font-size: 30px;">Related Courses</h3>
 									</div>
-			
+
 									<div class="clear"></div>
-			
+
 									<div class="row">
-			
-							
+
+
 										<div id="oc-events" class="owl-carousel events-carousel carousel-widget"
-											data-margin="10" data-nav="true" data-pagi="false" data-loop="true" data-autoplay="6000"
-											data-autoplayHoverPause="true" data-items-xs="1" data-items-sm="1" data-items-md="1"
-											data-items-xl="1">
-			
+											data-margin="10" data-nav="true" data-pagi="false" data-loop="true"
+											data-autoplay="6000" data-autoplayHoverPause="true" data-items-xs="1"
+											data-items-sm="1" data-items-md="1" data-items-xl="1">
+
 											<div class="oc-item">
 												<div class="course-card ievent hover-effect noborder clearfix">
 													<div class="col_one_third mb-0">
-														<a href="#"><img class="card-img-top" src="images/courses/17.png"
-																alt="Card image cap">
-															
+														<a href="#"><img class="card-img-top"
+																src="images/courses/17.png" alt="Card image cap">
+
 														</a>
 													</div>
 													<div class="entry-c col_two_third col_last mb-0">
@@ -1518,142 +1614,157 @@
 																Development</a></p>
 														<div class="rating-stars mb-0"><i class="icon-star3"></i><i
 																class="icon-star3"></i><i class="icon-star3"></i><i
-																class="icon-star3"></i><i class="icon-star-half-full"></i>
+																class="icon-star3"></i><i
+																class="icon-star-half-full"></i>
 															<span>4.7</span></div>
-														<p class="card-text text-black-50 mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+														<p class="card-text text-black-50 mb-1">Some quick example text
+															to build on the card title and make up the bulk of the
+															card's content.</p>
 													</div>
-			
+
 												</div>
 												<div class="course-card ievent hover-effect noborder clearfix">
 													<div class="col_one_third mb-0">
 														<a href="#"><img class="card-img-top"
-															src="images/courses/agile-training.png" alt="Card image cap">
-														
+																src="images/courses/agile-training.png"
+																alt="Card image cap">
+
 														</a>
 													</div>
 													<div class="entry-c col_two_third col_last mb-0">
 														<h4 class="card-title t700 mb-1"><a href="#">MERN Stack
-															Development with Mobile Apps</a></h4>
-													<p class="mb-0 card-title-sub uppercase t400 ls1"><a href="#"
-															class="text-black-50">Web
-															Development</a></p>
-													<div class="rating-stars mb-0"><i class="icon-star3"></i><i
-															class="icon-star3"></i><i class="icon-star3"></i><i
-															class="icon-star3"></i><i class="icon-star-half-full"></i>
-														<span>4.7</span></div>
-														<p class="card-text text-black-50 mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+																Development with Mobile Apps</a></h4>
+														<p class="mb-0 card-title-sub uppercase t400 ls1"><a href="#"
+																class="text-black-50">Web
+																Development</a></p>
+														<div class="rating-stars mb-0"><i class="icon-star3"></i><i
+																class="icon-star3"></i><i class="icon-star3"></i><i
+																class="icon-star3"></i><i
+																class="icon-star-half-full"></i>
+															<span>4.7</span></div>
+														<p class="card-text text-black-50 mb-1">Some quick example text
+															to build on the card title and make up the bulk of the
+															card's content.</p>
 													</div>
-			
+
 												</div>
 											</div>
-			
+
 											<!-- Course 2
 										============================================= -->
-										<div class="oc-item">
-											<div class="course-card ievent hover-effect noborder clearfix">
-												<div class="col_one_third mb-0">
-													<a href="#"><img class="card-img-top" src="images/courses/fortinet-training-120620.png"
-															alt="Card image cap">
-														
-													</a>
+											<div class="oc-item">
+												<div class="course-card ievent hover-effect noborder clearfix">
+													<div class="col_one_third mb-0">
+														<a href="#"><img class="card-img-top"
+																src="images/courses/fortinet-training-120620.png"
+																alt="Card image cap">
+
+														</a>
+													</div>
+													<div class="entry-c col_two_third col_last mb-0">
+														<h4 class="card-title t700 mb-1"><a href="#">MERN Stack
+																Development with Mobile Apps</a></h4>
+														<p class="mb-0 card-title-sub uppercase t400 ls1"><a href="#"
+																class="text-black-50">Web
+																Development</a></p>
+														<div class="rating-stars mb-0"><i class="icon-star3"></i><i
+																class="icon-star3"></i><i class="icon-star3"></i><i
+																class="icon-star3"></i><i
+																class="icon-star-half-full"></i>
+															<span>4.7</span></div>
+														<p class="card-text text-black-50 mb-1">Some quick example text
+															to build on the card title and make up the bulk of the
+															card's content.</p>
+													</div>
+
 												</div>
-												<div class="entry-c col_two_third col_last mb-0">
-													<h4 class="card-title t700 mb-1"><a href="#">MERN Stack
-															Development with Mobile Apps</a></h4>
-													<p class="mb-0 card-title-sub uppercase t400 ls1"><a href="#"
-															class="text-black-50">Web
-															Development</a></p>
-													<div class="rating-stars mb-0"><i class="icon-star3"></i><i
-															class="icon-star3"></i><i class="icon-star3"></i><i
-															class="icon-star3"></i><i class="icon-star-half-full"></i>
-														<span>4.7</span></div>
-													<p class="card-text text-black-50 mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<div class="course-card ievent hover-effect noborder clearfix">
+													<div class=" col_one_third mb-0">
+														<a href="#"><img class="card-img-top"
+																src="images/courses/agile-training.png"
+																alt="Card image cap">
+
+														</a>
+													</div>
+													<div class="entry-c col_two_third col_last mb-0">
+														<h4 class="card-title t700 mb-1"><a href="#">MERN Stack
+																Development with Mobile Apps</a></h4>
+														<p class="mb-0 card-title-sub uppercase t400 ls1"><a href="#"
+																class="text-black-50">Web
+																Development</a></p>
+														<div class="rating-stars mb-0"><i class="icon-star3"></i><i
+																class="icon-star3"></i><i class="icon-star3"></i><i
+																class="icon-star3"></i><i
+																class="icon-star-half-full"></i>
+															<span>4.7</span></div>
+														<p class="card-text text-black-50 mb-1">Some quick example text
+															to build on the card title and make up the bulk of the
+															card's content.</p>
+													</div>
+
 												</div>
-		
 											</div>
-											<div class="course-card ievent hover-effect noborder clearfix">
-												<div class=" col_one_third mb-0">
-													<a href="#"><img class="card-img-top"
-														src="images/courses/agile-training.png" alt="Card image cap">
-													
-													</a>
-												</div>
-												<div class="entry-c col_two_third col_last mb-0">
-													<h4 class="card-title t700 mb-1"><a href="#">MERN Stack
-														Development with Mobile Apps</a></h4>
-												<p class="mb-0 card-title-sub uppercase t400 ls1"><a href="#"
-														class="text-black-50">Web
-														Development</a></p>
-												<div class="rating-stars mb-0"><i class="icon-star3"></i><i
-														class="icon-star3"></i><i class="icon-star3"></i><i
-														class="icon-star3"></i><i class="icon-star-half-full"></i>
-													<span>4.7</span></div>
-													<p class="card-text text-black-50 mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												</div>
-		
-											</div>
-										</div>
-			
+
 											<!-- Course 3
 										============================================= -->
-										<div class="oc-item">
-											<div class="course-card ievent hover-effect noborder clearfix">
-												<div class=" col_one_third mb-0">
-													<a href="#"><img class="card-img-top" src="images/courses/17.png"
-															alt="Card image cap">
-														
-													</a>
+											<div class="oc-item">
+												<div class="course-card ievent hover-effect noborder clearfix">
+													<div class=" col_one_third mb-0">
+														<a href="#"><img class="card-img-top"
+																src="images/courses/17.png" alt="Card image cap">
+
+														</a>
+													</div>
+													<div class="entry-c col_two_third col_last mb-0">
+														<h4 class="card-title t700 mb-1"><a href="#">MERN Stack
+																Development with Mobile Apps</a></h4>
+														<p class="mb-0 card-title-sub uppercase t400 ls1"><a href="#"
+																class="text-black-50">Web
+																Development</a></p>
+														<div class="rating-stars mb-0"><i class="icon-star3"></i><i
+																class="icon-star3"></i><i class="icon-star3"></i><i
+																class="icon-star3"></i><i
+																class="icon-star-half-full"></i>
+															<span>4.7</span></div>
+														<p class="card-text text-black-50 mb-1">Some quick example text
+															to build on the card title and make up the bulk of the
+															card's content.</p>
+													</div>
+
 												</div>
-												<div class="entry-c col_two_third col_last mb-0">
-													<h4 class="card-title t700 mb-1"><a href="#">MERN Stack
-															Development with Mobile Apps</a></h4>
-													<p class="mb-0 card-title-sub uppercase t400 ls1"><a href="#"
-															class="text-black-50">Web
-															Development</a></p>
-													<div class="rating-stars mb-0"><i class="icon-star3"></i><i
-															class="icon-star3"></i><i class="icon-star3"></i><i
-															class="icon-star3"></i><i class="icon-star-half-full"></i>
-														<span>4.7</span></div>
-													<p class="card-text text-black-50 mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+												<div class="course-card ievent hover-effect noborder clearfix">
+													<div class=" col_one_third mb-0">
+														<a href="#"><img class="card-img-top"
+																src="images/courses/fortinet-training-120620.png"
+																alt="Card image cap">
+
+														</a>
+													</div>
+													<div class="entry-c col_two_third col_last mb-0">
+														<h4 class="card-title t700 mb-1"><a href="#">MERN Stack
+																Development with Mobile Apps</a></h4>
+														<p class="mb-0 card-title-sub uppercase t400 ls1"><a href="#"
+																class="text-black-50">Web
+																Development</a></p>
+														<div class="rating-stars mb-0"><i class="icon-star3"></i><i
+																class="icon-star3"></i><i class="icon-star3"></i><i
+																class="icon-star3"></i><i
+																class="icon-star-half-full"></i>
+															<span>4.7</span></div>
+														<p class="card-text text-black-50 mb-1">Some quick example text
+															to build on the card title and make up the bulk of the
+															card's content.</p>
+													</div>
+
 												</div>
-		
 											</div>
-											<div class="course-card ievent hover-effect noborder clearfix">
-												<div class=" col_one_third mb-0">
-													<a href="#"><img class="card-img-top"
-														src="images/courses/fortinet-training-120620.png" alt="Card image cap">
-													
-													</a>
-												</div>
-												<div class="entry-c col_two_third col_last mb-0">
-													<h4 class="card-title t700 mb-1"><a href="#">MERN Stack
-														Development with Mobile Apps</a></h4>
-												<p class="mb-0 card-title-sub uppercase t400 ls1"><a href="#"
-														class="text-black-50">Web
-														Development</a></p>
-												<div class="rating-stars mb-0"><i class="icon-star3"></i><i
-														class="icon-star3"></i><i class="icon-star3"></i><i
-														class="icon-star3"></i><i class="icon-star-half-full"></i>
-													<span>4.7</span></div>
-													<p class="card-text text-black-50 mb-1">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-												</div>
-		
-											</div>
-										</div>
-			
-								
-			
+
+
+
 										</div>
 
-										<div class="col_full center mb-0">
-											<button
-												class="button button-border button-border-thin button-blue nott m-0"><span>
-													 Show More Related Courses
-												</span>												
-											</button>
-										</div>
 									</div>
-			
+
 								</div>
 
 								<div class="divider divider-center mt-4 mb-4"><i class="icon-dot-circle"></i></div>
@@ -1729,11 +1840,9 @@
 												<div class="comment-content clearfix">
 
 													<div class="comment-author">
-														<a href="#"
-															rel="external nofollow" class="url">User
+														<a href="#" rel="external nofollow" class="url">User
 															t3245</a><span>
-																<a href="#"
-																title="Permalink to this comment">April
+															<a href="#" title="Permalink to this comment">April
 																25, 2012 at 1:03 am</a></span></div>
 
 													<p>Integer posuere erat a ante venenatis dapibus
@@ -1760,18 +1869,17 @@
 
 							</div>
 
-							<div class="col-md-3 sticky-sidebar-wrap" style=" z-index: 6;">
-								<div class="card shadow mt-4" data-animate="shake"
+							<div class="col-md-4 sticky-sidebar-wrap" style=" z-index: 6;">
+								<div class="card shadow mt-2" data-animate="shake"
 									style="opacity: 1 !important; position: absolute;">
-									<div class="card-body">
+									<div class="card-body px-4">
 
-										<div class="badge registration-badge shadow-sm alert-primary">Enroll
-											Now!</div>
-										<h4 class="card-title ls-1 mt-4 t700 h5">Get Your Online Course!
+
+										<h4 class="card-title center mt-2 mb-2 t400">
+											Request more information
 										</h4>
-										<h6 class="card-subtitle mb-2 t400 uppercase ls2 text-black-50">Free
-											Registration</h6>
-
+										<div class="divider divider-short divider-center m-0"><i
+												class="icon-email2"></i></div>
 										<div class="form-widget">
 											<div class="form-result"></div>
 
@@ -1797,13 +1905,18 @@
 													<select name="phone_code" id="exit_isd"
 														class="sm-form-control border-form-control">
 
-														<option value="+1" title="+1 - United States">+1 &nbsp; United States
+														<option value="+1" title="+1 - United States">+1
+															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; United States
 														</option>
-														<option value="+91" title="+91 - India">+91 &nbsp; India</option>
-														<option value="+1" title="+1 - Canada">+1 &nbsp; Canada</option>
-														<option value="+61" title="+61 - Australia">+61 &nbsp; Australia
+														<option value="+91" title="+91 - India">+91
+															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; India</option>
+														<option value="+1" title="+1 - Canada">+1
+															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Canada</option>
+														<option value="+61" title="+61 - Australia">+61
+															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Australia
 														</option>
-														<option value="+65" title="+65 - Singapore">+65 - Singapore
+														<option value="+65" title="+65 - Singapore">+65
+															&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Singapore
 														</option>
 														<option value="+64" title="+64 - New Zealand">+64 - New Zealand
 														</option>
@@ -2022,11 +2135,17 @@
 														placeholder="Phone Number" />
 												</div>
 
-												<div class="col_full mb-0">
+												<div class="col_full mb-3">
+													<textarea name="event-registration-bio" id="event-registration-bio"
+														class="sm-form-control border-form-control valid" cols="30"
+														rows="2" placeholder="Write an optional message"></textarea>
+												</div>
+
+												<div class="col_full mb-0 center">
 													<button
-														class="button button-3d button-rounded btn-block button-red text-white nott ls0 m-0"
+														class="button button-3d button-rounded button-red text-white nott m-0"
 														type="submit" id="template-contactform-submit"
-														name="template-contactform-submit" value="submit">Apply It
+														name="template-contactform-submit" value="submit">Apply
 														Now</button>
 													<br>
 													<small
@@ -2056,38 +2175,6 @@
 					</div>
 				</div>
 
-			
-				<div id="certification" class="section mb-0"
-					style="background-image: linear-gradient(to right, #267df4 , #79d2e0); z-index: 9;">
-
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-8">
-
-								<div class="emphasis-title mb-3">
-									<span class="before-heading text-white" style="font-size: 14px;"><em>Get Started
-											with</em></span>
-									<h2 class="capitalize t600 text-white" style="font-size: 34px; line-height: 1.2;">
-										AWS Architect Certification Training</h2>
-								</div>
-								<p class="text-white lead t300">Consectetur adipisicing elit. Voluptate incidunt dolorum
-									perferendis accusamus nesciunt et est consequuntur placeat,
-									dolor quia.
-								</p>
-								<a href="#"
-								class="button button-circle button-border button-light text-white button-fill tright"><span>Enroll
-									Now <i class="icon-line-arrow-right"></i></span></a>
-
-							</div>
-
-							<div class="col-lg-4 center">
-								<img src="images/certificate.png" alt="">
-								
-
-							</div>
-						</div>
-					</div>
-				</div>
 
 
 		</section><!-- #content end -->
@@ -2095,7 +2182,7 @@
 		<!-- Footer
 		============================================= -->
 		<footer id="footer" class="dark"
-			style="background: url('images/footer-bg.jpg') repeat fixed; background-size: 100% 100%;">
+			style="background: url('images/footer-bg.jpg') repeat fixed; background-size: 100% 100%; z-index: 9;">
 
 			<div class="container">
 
@@ -2106,8 +2193,8 @@
 					<div class="row">
 						<div class="col-6 col-md"
 							style="background: url('images/world-map.png') no-repeat center center; background-size: 100%;">
-							<img class="mb-3" src="demos/course/images/logo.png" alt="" width="160">
-							<small class="d-block mb-4 text-muted">&copy; 2020</small>
+							<img class="mb-3" src="images/02.png" alt="" width="150">
+							<small class="d-block mb-2 text-muted">&copy; 2020</small>
 							<p class="text-white-50" style="font-size: 16px;">Lorem ipsum dolor sit
 								amet, consectetur adipisicing elit. Voluptatibus, impedit quam nemo
 								doloremque sed, dolores.</p>
@@ -2283,31 +2370,22 @@
 					<div class="line line-sm mt-5"></div>
 					<div>
 						<h4 class="mb-3 ls2 t400">Trending Courses</h4>
-						<a href="#"
-							title="PMP Certification Training Course">PMP Certification Training Course</a> | <a
-							href="#"
-							title="Big Data Hadoop Certification Training Course">Big Data Hadoop Certification Training
-							Course</a> | <a
-							href="#"
-							title="Data Science with Python Training Course">Data Science with Python Training
-							Course</a> | <a
-							href="#"
-							title="Machine Learning Certification Course">Machine Learning Certification Course</a> | <a
-							href="#"
+						<a href="#" title="PMP Certification Training Course">PMP Certification Training Course</a> | <a
+							href="#" title="Big Data Hadoop Certification Training Course">Big Data Hadoop Certification
+							Training
+							Course</a> | <a href="#" title="Data Science with Python Training Course">Data Science with
+							Python Training
+							Course</a> | <a href="#" title="Machine Learning Certification Course">Machine Learning
+							Certification Course</a> | <a href="#"
 							title="AWS Solutions Architect Certification Training Course">AWS Solutions Architect
-							Certification Training Course</a> | <a
-							href="#"
+							Certification Training Course</a> | <a href="#"
 							title="DevOps Certification Training Course">DevOps Certification Training Course</a> | <a
-							href="#"
-							title="CISSP Certification Training">CISSP Certification Training</a> | <a
-							href="#"
+							href="#" title="CISSP Certification Training">CISSP Certification Training</a> | <a href="#"
 							title="Certified ScrumMaster (CSM) Certification Training">Certified ScrumMaster (CSM)
-							Certification Training</a> | <a
-							href="#"
+							Certification Training</a> | <a href="#"
 							title="ITIL 4 Foundation Certification Training Course">ITIL 4 Foundation Certification
-							Training Course</a> | <a
-							href="#"
-							title="Java Certification Course">Java Certification Course</a>
+							Training Course</a> | <a href="#" title="Java Certification Course">Java Certification
+							Course</a>
 					</div>
 				</div><!-- .footer-widgets-wrap end -->
 
@@ -2371,6 +2449,41 @@
 				$("#display").hide();
 			});
 		});
+
+
+		// Set the date we're counting down to
+		var countDownDate = new Date("Jan 5, 2021 15:37:25").getTime();
+
+		// Update the count down every 1 second
+		var x = setInterval(function () {
+
+			// Get today's date and time
+			var now = new Date().getTime();
+
+			// Find the distance between now and the count down date
+			var distance = countDownDate - now;
+
+			// Time calculations for days, hours, minutes and seconds
+			var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+			var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+			var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+			var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+			document.getElementById("demo").innerHTML = "<span class='days digit' style='background: #ffc300;'>" +
+				days +
+				"</span><span class='days_ref text'> D</span> <span class='hours digit' style='background: #ffc300;'>" +
+				hours +
+				"</span> <span class='hours_ref text'> H</span> <span class='minutes digit' style='background: #ffc300;'>" +
+				minutes +
+				"</span><span class='minutes_ref text'> M</span> <span class='seconds last digit' style='background: #ffc300;'>" +
+				seconds + "</span><span class='seconds_ref text'> S</span>"
+
+			// If the count down is over, write some text 
+			if (distance < 0) {
+				clearInterval(x);
+				document.getElementById("demo").innerHTML = "EXPIRED";
+			}
+		}, 1000);
 	</script>
 
 </body>
