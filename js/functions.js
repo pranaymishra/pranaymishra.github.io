@@ -2545,6 +2545,8 @@ var SEMICOLON = SEMICOLON || {};
 			});
 		},
 
+		// Toggles Expand & Collapse all. Scroll into view on click.
+
 		toggles: function(){
 			var $toggle = $('.toggle');
 			if( $toggle.length > 0 ) {
@@ -2636,7 +2638,8 @@ var SEMICOLON = SEMICOLON || {};
 							element.find('.acctitle').removeClass('acctitlec').next().slideUp("normal");
 							var clickTarget = $(this);
 							$(this).toggleClass('acctitlec').next().stop().slideDown("normal", function(){
-								if( ( $body.hasClass('device-sm') || $body.hasClass('device-xs') ) && element.hasClass('scroll-on-open') ) {
+								// if( ( $body.hasClass('device-sm') || $body.hasClass('device-xs') ) && element.hasClass('scroll-on-open') ) {
+								if( element.hasClass('scroll-on-open') ) {
 									$('html,body').stop(true).animate({
 										'scrollTop': clickTarget.offset().top - ( SEMICOLON.initialize.topScrollOffset() - 40 )
 									}, 800, 'easeOutQuad' );

@@ -11363,6 +11363,11 @@ body:not(.device-touch) .social-icon i {
 	padding: 10px 0 10px 20px;
 }
 
+.acctitle h4 {
+	font-size: 14px;
+	margin-bottom: 0px;
+}
+
 .acctitlec {
 	cursor: auto;
 }
