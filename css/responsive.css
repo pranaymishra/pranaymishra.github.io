@@ -1555,9 +1555,12 @@
 
 	#top-cart { display: none; }
 
-	#top-search a { right: 40px; }
+	#top-search a { right: 18px; }
 
-	#top-search form input { padding-right: 55px; }
+	#top-search form input { 
+		padding-right: 25px;
+		padding-left: 30px;
+	}
 
 	#side-panel-trigger { right: 68px; }
 

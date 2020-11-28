@@ -2,6 +2,13 @@
 	flex: none !important;
 }
 
+.mobile-search {
+    border: none;
+    background: transparent;
+    position: absolute;
+    margin: 17.33px 0;
+}
+
 .search-form {
 	margin: 11px 0;
 }
