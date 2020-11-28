@@ -1,3 +1,7 @@
+.flex-none {
+	flex: none !important;
+}
+
 .search-form {
 	margin: 11px 0;
 }
@@ -9,7 +13,7 @@ ul.icons-list {
 ul.icons-list li {
 	float: left;
 	width: 50%;
-	margin-bottom: 10px;
+	margin-bottom: 15px;
 	font-size: 16px;
 	padding: 0 15px;
 }
@@ -49,20 +53,20 @@ ul.icons-list li i {
 .toggle.toggle-bg .togglet i {
 	left: auto !important;
 	right: 24px;
-	line-height: 55px !important;
+	line-height: 58px !important;
 	width: 20px;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 
 .toggle.toggle-bg .togglet,
 .toggle.toggle-bg .toggleta {
-	background-color: #F2F6FA !important;
+	background-color:rgba(38, 125, 244, 0.1) !important;
 	padding: 10px 44px 10px 24px !important;
 }
 
 .toggle.toggle-bg .togglec {
-	background-color: #F2F6FA !important;
+	background-color: rgba(38, 125, 244, 0.1) !important;
 
 }
 
@@ -437,7 +441,7 @@ address,
 table,
 fieldset,
 form {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 
 small {
@@ -6804,7 +6808,7 @@ body:not(.device-touch) .entry-link {
 
 .commentlist li {
 	position: relative;
-	margin: 30px 0 0 30px;
+	margin: 15px 0 0 30px;
 }
 
 #reviews .commentlist li {
@@ -6850,7 +6854,7 @@ body:not(.device-touch) .entry-link {
 
 .commentlist li .comment-content p,
 .pingback p {
-	margin: 20px 0 0 0;
+	margin: 0px;
 }
 
 .commentlist li .comment-content {
@@ -6919,15 +6923,18 @@ body:not(.device-touch) .entry-link {
 .review-comment-ratings {
 	display: block;
 	position: absolute;
-	top: 4px;
+	bottom: 0px;
 	left: auto;
 	text-align: center;
-	right: 0px;
-	width: 14px;
-	height: 14px;
+	right: -10px;
+	width: 27px !important;
+	height: 27px !important;
 	color: #CCC;
 	font-size: 14px;
-	line-height: 1;
+}
+
+.comment-reply-link i {
+	line-height: 27px !important;
 }
 
 .review-comment-ratings {
@@ -7645,7 +7652,7 @@ td.actions {
 .events .entry,
 .ievent {
 	padding: 10px 20px 10px 10px;
-	background-color: #F9F9F9;
+	background-color: rgba(38, 125, 244, 0.03);
 	border-bottom: 3px solid #EEE;
 }
 
@@ -11210,7 +11217,7 @@ body:not(.device-touch) .social-icon i {
 .toggle {
 	display: block;
 	position: relative;
-	margin: 0 0 9px 0;
+	margin: 0 0 6px 0;
 }
 
 .toggle .togglet,
@@ -11397,7 +11404,7 @@ body:not(.device-touch) .social-icon i {
 	background-color: rgba(38, 125, 244, 0.1);
 	line-height: 44px;
 	padding: 0 0 0 36px;
-	margin-bottom: 5px;
+	border-bottom: 1px solid;
 	border-top: 0;
 }
 
@@ -11415,21 +11422,22 @@ body:not(.device-touch) .social-icon i {
 -----------------------------------------------------------------*/
 
 .accordion.accordion-border {
-	border: 1px solid rgba(38, 125, 244, 0.1);
+	border: 1px solid #dde6ed;
+	box-shadow: 0 2px 8px 0 rgba(0,0,0,0.1) !important;
 	border-radius: 4px;
 }
 
 .accordion.accordion-border .acctitle,
 .accordion.accordion-border .acctitlec {
 	border-color: rgba(38, 125, 244, 0.1);
-	line-height: 44px;
-	padding: 0 15px 0 21px;
+	line-height: 21px;
+	padding: 15px 36px 15px 21px;
 }
 
 .accordion.accordion-border .acctitle i {
 	left: auto;
-	line-height: 44px;
-	right: 24px;
+	line-height: 49px;
+	right: 18px;
 }
 
 .accordion.accordion-border .acc_content {

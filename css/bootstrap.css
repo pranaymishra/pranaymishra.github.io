@@ -3415,6 +3415,7 @@ input[type="button"].btn-block {
 }
 
 .input-group > .form-control,
+.input-group > .sm-form-control,
 .input-group > .form-control-plaintext,
 .input-group > .custom-select,
 .input-group > .custom-file {
@@ -3510,6 +3511,7 @@ input[type="button"].btn-block {
 
 .input-group-prepend {
   margin-right: -1px;
+  flex: 0 0 20%;
 }
 
 .input-group-append {

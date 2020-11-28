@@ -1,3 +1,88 @@
+// Start
+$(function() {		
+	var $el, $ps, $up, totalHeight;
+	$(".auto-expand .read-more").click(function() {
+			
+		totalHeight = 0
+	
+		$el = $(this);
+		$p  = $el.parent();
+		$up = $p.parent();
+		$ps = $up.find("p:not('.read-more')");
+		
+		$up.each(function() {
+			totalHeight += $(this).outerHeight();
+		});
+				
+		$up.css({
+			"max-height": 9999
+		})
+		
+		$p.fadeOut();
+		return false;
+		
+	});	
+});
+
+	$('#top-bar').on('click', '#close-bar', function () {
+		$(this).parents('#top-bar').slideUp(300);
+		$('body').css('padding-top', 0);
+	})
+
+	$(document).ready(function () {
+
+		$("#show").click(function () {
+			$("#topics").show();
+			$("#show").hide();
+			$('html, body').animate({
+				scrollTop: $('#topics').offset().top - 150
+			}, 1000);
+		});
+
+		$("#display").click(function () {
+			$("#faq-show").show();
+			$("#display").hide();
+			$('html, body').animate({
+				scrollTop: $('#faq-show').offset().top - 150
+			}, 1000);
+		});
+
+		$("#view").click(function () {
+			$("#more-reviews").show();
+			$("#view").hide();
+			$('html, body').animate({
+				scrollTop: $('#more-reviews').offset().top - 150
+			}, 1000);
+		});
+	});
+
+	var countDownDate = new Date("Nov 28, 2020 12:00:00").getTime();
+
+	var x = setInterval(function () {
+		var now = new Date().getTime();
+		var distance = countDownDate - now;
+		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+		document.getElementById("demo").innerHTML = "<span class='days digit' style='background: #ffc300;'>" +
+			days +
+			"</span><span class='days_ref text'> D</span> <span class='hours digit' style='background: #ffc300;'>" +
+			hours +
+			"</span> <span class='hours_ref text'> H</span> <span class='minutes digit' style='background: #ffc300;'>" +
+			minutes +
+			"</span><span class='minutes_ref text'> M</span> <span class='seconds last digit' style='background: #ffc300;'>" +
+			seconds + "</span><span class='seconds_ref text'> S</span>"
+	
+		if (distance < 0) {
+			clearInterval(x);
+			document.getElementById("demo").innerHTML = "EXPIRED";
+		}
+	}, 1000);
+
+// End
+
 var $ = jQuery.noConflict();
 
 $.fn.inlineStyle = function (prop) {
