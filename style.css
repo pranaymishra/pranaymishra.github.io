@@ -1,3 +1,91 @@
+/* ----------------------------------------------------------------
+	Flyer end - Mid month madness
+-----------------------------------------------------------------*/
+.text {
+	display: block;
+	font-size: 12px;
+}
+
+.flyer-center {
+	top: 50%;
+    position: relative;
+    left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+span.digit {
+	background-color: #fff !important;
+	border-radius: 0% !important;
+	font-size: 18px;
+	line-height: 1;
+}
+
+.flyer-m {
+	border: 5px solid #fdfdfd !important;
+	display: flex;
+	display: -ms-flexbox;
+}
+
+.flyer-m a#close-bar {
+	top: 0;
+    position: absolute;
+    right: 3px;
+    line-height: 1.3;
+}
+
+.flyer-m-right {
+	background-color: #f0f0f0;
+	padding: 10px;
+}
+
+.flyer-m-right p {
+	font-size: 10px;
+	font-weight: 600;
+	line-height: normal;
+	margin-bottom: 5px;
+}
+
+.flyer-m-right a {
+	margin-left: 0px !important;
+	border-bottom: 0;
+	font-size: 12px;
+	font-weight: 600;
+	color: #fe324c;
+}
+
+.flyer-m-left {
+	background-color: #fe324c;
+	padding: 10px;
+}
+
+.flyer-m-left p {
+	font-size: 20px;
+	letter-spacing: 3px;
+	color: white;
+	font-weight: 300;
+	line-height: 1.3;
+}
+
+.flyer-m-left p span {
+	font-size: 25px;
+}
+
+.flyer-m-left span {
+	font-size: 14px;
+	color: white;
+}
+
+.flyer-m-left small {
+	font-weight: lighter;
+	font-size: 14px;
+	color: #fff;
+}
+
+/* ----------------------------------------------------------------
+	Flyer end
+-----------------------------------------------------------------*/
+
 .flex-none {
 	flex: none !important;
 }

@@ -56,30 +56,59 @@ $(function() {
 		});
 	});
 
-	var countDownDate = new Date("Nov 28, 2020 12:00:00").getTime();
+	// var countDownDate = new Date("Dec 25, 2020 12:00:00").getTime();
+
+	// var x = setInterval(function () {
+	// 	var now = new Date().getTime();
+	// 	var distance = countDownDate - now;
+	// 	var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+	// 	var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	// 	var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+	// 	var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+	// 	document.getElementById("demo").innerHTML = "<span class='days digit' style='background: #ffc300;'>" +
+	// 		days +
+	// 		"</span><span class='days_ref text'> D</span> <span class='hours digit' style='background: #ffc300;'>" +
+	// 		hours +
+	// 		"</span> <span class='hours_ref text'> H</span> <span class='minutes digit' style='background: #ffc300;'>" +
+	// 		minutes +
+	// 		"</span><span class='minutes_ref text'> M</span> <span class='seconds last digit' style='background: #ffc300;'>" +
+	// 		seconds + "</span><span class='seconds_ref text'> S</span>"
+	
+	// 	if (distance < 0) {
+	// 		clearInterval(x);
+	// 		document.getElementById("demo").innerHTML = "EXPIRED";
+	// 	}
+	// }, 1000);
+
+	var countDownDate = new Date("Dec 25, 2020 12:00:00").getTime();
 
 	var x = setInterval(function () {
 		var now = new Date().getTime();
 		var distance = countDownDate - now;
-		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		var days = pad(Math.floor(distance / (1000 * 60 * 60 * 24)));
+		var hours = pad(Math.floor(parseInt((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))));
+		var minutes = pad(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
+		var seconds = pad(Math.floor((distance % (1000 * 60)) / 1000));
 
-		document.getElementById("demo").innerHTML = "<span class='days digit' style='background: #ffc300;'>" +
+		document.getElementById("demo").innerHTML = "<div class='col-3 p-0'><span class='days_ref text'>D</span><span class='days digit' style='background: #ffc300;'>" +
 			days +
-			"</span><span class='days_ref text'> D</span> <span class='hours digit' style='background: #ffc300;'>" +
+			"</span></div> <div class='col-3 p-0'><span class='hours_ref text'>H</span><span class='hours digit' style='background: #ffc300;'>" +
 			hours +
-			"</span> <span class='hours_ref text'> H</span> <span class='minutes digit' style='background: #ffc300;'>" +
+			"</span> </div> <div class='col-3 p-0'><span class='minutes_ref text'>M</span><span class='minutes digit' style='background: #ffc300;'>" +
 			minutes +
-			"</span><span class='minutes_ref text'> M</span> <span class='seconds last digit' style='background: #ffc300;'>" +
-			seconds + "</span><span class='seconds_ref text'> S</span>"
+			"</span></div> <div class='col-3 p-0'><span class='seconds_ref text'>S</span><span class='seconds last digit' style='background: #ffc300;'>" +
+			seconds + "</span></div>"
 	
 		if (distance < 0) {
 			clearInterval(x);
 			document.getElementById("demo").innerHTML = "EXPIRED";
 		}
 	}, 1000);
+
+	function pad(n) {
+		return (n < 10 ? '0' : '') + n;
+	  }
 
 // End
 
